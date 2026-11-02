@@ -1,0 +1,618 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "name": "misjudgment and omission of ECG features",
+      "node_type": "rational",
+      "text_evidence": "misjudgment and omission of conventional ECG identification for the ECG features extraction"
+    },
+    {
+      "id": 2,
+      "name": "reduces the diagnostic accuracy",
+      "node_type": "rational",
+      "text_evidence": "reduces the diagnostic accuracy"
+    },
+    {
+      "id": 3,
+      "name": "poor channel conditions",
+      "node_type": "rational",
+      "text_evidence": "due to poor channel conditions"
+    },
+    {
+      "id": 4,
+      "name": "telemedical applications involving transmission and storage of ECG",
+      "node_type": "rational",
+      "text_evidence": "recent telemedical applications involving transmission and storage of ECG"
+    },
+    {
+      "id": 5,
+      "name": "Noisy ECG",
+      "node_type": "rational",
+      "text_evidence": "for the sampled ECG signal, it is predictable to mix various noises (...) noise also appears (...) noisy ECG"
+    },
+    {
+      "id": 6,
+      "name": "ECG signal denoising and preprocessing",
+      "node_type": "rational",
+      "text_evidence": "ECG signal denoising and preprocessing"
+    },
+    {
+      "id": 7,
+      "name": "ECG enhancement",
+      "node_type": "rational",
+      "text_evidence": "ECG enhancement"
+    },
+    {
+      "id": 8,
+      "name": "adaptive filter architecture",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "adaptive filter architecture"
+    },
+    {
+      "id": 9,
+      "name": "denoise ECG",
+      "node_type": "rational",
+      "text_evidence": "extract a denoised signal from the noisy ECG"
+    },
+    {
+      "id": 10,
+      "name": "principal component analysis",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "principal component analysis"
+    },
+    {
+      "id": 11,
+      "name": "independent component analysis",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "independent component analysis"
+    },
+    {
+      "id": 12,
+      "name": "neural networks",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "neural networks"
+    },
+    {
+      "id": 13,
+      "name": "simplify and minimize hardware requirements",
+      "node_type": "rational",
+      "text_evidence": "to simplify and minimize the hardware, because WT inherently supports all the features of signal processing provided by separate hardware and microprocessors but in fewer units."
+    },
+    {
+      "id": 14,
+      "name": "wavelet-transform-based denoising",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "denoising technique using wavelet transform (WT)"
+    },
+    {
+      "id": 15,
+      "name": "remove baseline wander",
+      "node_type": "rational",
+      "text_evidence": "Baseline wandering removal"
+    },
+    {
+      "id": 16,
+      "name": "estimate baseline wander",
+      "node_type": "rational",
+      "text_evidence": "Baseline estimation"
+    },
+    {
+      "id": 17,
+      "name": "cubic spline",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "cubic spline"
+    },
+    {
+      "id": 18,
+      "name": "Linear interpolation between isoelectric levels",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "linearly interpolating between pre-known isoelectric levels"
+    },
+    {
+      "id": 19,
+      "name": "estimate isoelectric levels from PR intervals",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "isoelectric levels estimated from PR intervals"
+    },
+    {
+      "id": 20,
+      "name": "baseline wander construction",
+      "node_type": "rational",
+      "text_evidence": "baseline construction"
+    },
+    {
+      "id": 21,
+      "name": "linear filtering",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "linear filtering"
+    },
+    {
+      "id": 22,
+      "name": "use of wavelet packets",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "use of wavelet packets"
+    },
+    {
+      "id": 23,
+      "name": "wavelet based Wiener filtering techniques",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "wavelet based Wiener filtering techniques"
+    },
+    {
+      "id": 24,
+      "name": "wavelet transform (WT)",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "A multi-resolution characteristics based denoising technique using wavelet transform (WT) have also acknowledged among the researchers in recent years."
+    },
+    {
+      "id": 25,
+      "name": "wavelet coefficient thresholding",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "the decomposed wavelet coefficient is thresholded"
+    },
+    {
+      "id": 26,
+      "name": "Inverse Discrete Wavelet Transform (IDWT) reconstruction",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "reconstructed using Inverse Discrete Wavelet Transform (IDWT)"
+    },
+    {
+      "id": 27,
+      "name": "choosing a threshold value",
+      "node_type": "rational",
+      "text_evidence": "problem of choosing threshold value"
+    },
+    {
+      "id": 28,
+      "name": "S-median",
+      "node_type": "operation",
+      "parameters": [
+        "tuning_factor_b: 1"
+      ],
+      "text_evidence": "S-median (...) They used the tuning factor b as unity in most of the cases"
+    },
+    {
+      "id": 29,
+      "name": "Adaptive S-median",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "algorithm named modified S-median to find an adaptive value of the threshold (...) This algorithm combines both the important issues: the noise-free reconstruction property and level-dependent adaptation factor which makes it more sophisticated for removing the noise."
+    },
+    {
+      "id": 30,
+      "name": "wavelet transform (WT)",
+      "node_type": "operation",
+      "parameters": [
+        "wavelet: Symlet"
+      ],
+      "text_evidence": "wavelet transform (WT) (...) Symlet wavelet function has been selected for coefficient calculation for modified S-median thresholding."
+    },
+    {
+      "id": 31,
+      "name": "Denoise ECG with wavelet-based method",
+      "node_type": "rational",
+      "text_evidence": "remove the noise from ECG signal as its scaling function and wavelet function is similar to ECG waveforms"
+    },
+    {
+      "id": 32,
+      "name": "Add simulated white noise",
+      "node_type": "operation",
+      "parameters": [
+        "snr_db: 5"
+      ],
+      "text_evidence": "White noise is a random signal with a flat power spectral density. (...) White noise and color noise are simulated having 5 dB input SNR (...) The noisy signal was generated by adding (...) white (...) noise"
+    },
+    {
+      "id": 33,
+      "name": "evaluate performance of denoising technique on real noise",
+      "node_type": "rational",
+      "text_evidence": "The basic aim of the proposed thresholding is to improve the quality of the ECG signal. (...) quantitative and qualitative evaluation of the techniques."
+    },
+    {
+      "id": 34,
+      "name": "add real baseline wander from MIT-BIH noise stress database",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "adding real baseline wander (RBW)"
+    },
+    {
+      "id": 35,
+      "name": "evaluate performance of denoising technique on synthetic noise",
+      "node_type": "rational",
+      "text_evidence": "The basic aim of the proposed thresholding is to improve the quality of the ECG signal. (...) quantitative and qualitative evaluation of the techniques."
+    },
+    {
+      "id": 36,
+      "name": "add real electrode noise from MIT-BIH noise stress database",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "adding real electrode movement (REM)"
+    },
+    {
+      "id": 37,
+      "name": "add real motion artifacts from MIT-BIH noise stress database",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "adding real motion artifact (RMA)"
+    },
+    {
+      "id": 38,
+      "name": "S-median",
+      "node_type": "operation",
+      "parameters": [
+        "tuning_factor_b: optimal"
+      ],
+      "text_evidence": "S-median (...) optimal value of b is desirable for denoising"
+    },
+    {
+      "id": 39,
+      "name": "Choose the optimal b factor",
+      "node_type": "rational",
+      "text_evidence": "optimal value of b is desirable for denoising"
+    },
+    {
+      "id": 40,
+      "name": "Add simulated coloured noise",
+      "node_type": "operation",
+      "parameters": [
+        "snr_db: 5"
+      ],
+      "text_evidence": "Color noise or flicker noise is a low-frequency electronic noise which is inversely proportional of power spectral density with respect to the frequency. (...) color noise are simulated having 5 dB input SNR (...) The noisy signal was generated by adding (...) color noise"
+    },
+    {
+      "id": 41,
+      "name": "Spectral-information preservation",
+      "node_type": "rational",
+      "text_evidence": "can preserve better spectral information"
+    },
+    {
+      "id": 42,
+      "name": "Highly redundant CWT representation",
+      "node_type": "rational",
+      "text_evidence": "CWT is much redundant representation"
+    },
+    {
+      "id": 43,
+      "name": "Discrete wavelet transform (DWT)",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "Discrete wavelet transform (...) dyadic or octave wavelet transform (...) DWT uses a set of dyadic scales"
+    }
+  ],
+  "edges": [
+    {
+      "id": 44,
+      "source": 5,
+      "target": 1,
+      "polarity": "positive",
+      "edge_type": "causes",
+      "text_evidence": "for the sampled ECG signal, it is predictable to mix various noises such as power-line interference, baseline wander, muscle noise and motion artifact and other noises with, which in varying degrees causes misjudgment and omission of conventional ECG identification for the ECG features extraction and reduces the diagnostic accuracy"
+    },
+    {
+      "id": 45,
+      "source": 5,
+      "target": 2,
+      "polarity": "positive",
+      "edge_type": "causes",
+      "text_evidence": "for the sampled ECG signal, it is predictable to mix various noises such as power-line interference, baseline wander, muscle noise and motion artifact and other noises with, which in varying degrees causes misjudgment and omission of conventional ECG identification for the ECG features extraction and reduces the diagnostic accuracy"
+    },
+    {
+      "id": 46,
+      "source": 4,
+      "target": 3,
+      "polarity": "positive",
+      "edge_type": "may lead to",
+      "text_evidence": "Moreover, with the recent telemedical applications involving transmission and storage of ECG, noise also appears due to poor channel conditions."
+    },
+    {
+      "id": 47,
+      "source": 3,
+      "target": 5,
+      "polarity": "positive",
+      "edge_type": "causes",
+      "text_evidence": "Moreover, with the recent telemedical applications involving transmission and storage of ECG, noise also appears due to poor channel conditions."
+    },
+    {
+      "id": 48,
+      "source": 5,
+      "target": 6,
+      "polarity": "positive",
+      "edge_type": "causes",
+      "text_evidence": "A noisy ECG may hinder the physician's correct evaluations on patients. Therefore, the ECG signal denoising and preprocessing become an exclusive requirement."
+    },
+    {
+      "id": 49,
+      "source": 7,
+      "target": 8,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "In the literature, many approaches have been reported to address ECG enhancement. Among them, adaptive filter architecture is common."
+    },
+    {
+      "id": 50,
+      "source": 9,
+      "target": 10,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Statistical techniques such as principal component analysis, independent component analysis, and neural networks were used to extract a denoised signal from the noisy ECG."
+    },
+    {
+      "id": 51,
+      "source": 9,
+      "target": 11,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Statistical techniques such as principal component analysis, independent component analysis, and neural networks were used to extract a denoised signal from the noisy ECG."
+    },
+    {
+      "id": 52,
+      "source": 9,
+      "target": 12,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Statistical techniques such as principal component analysis, independent component analysis, and neural networks were used to extract a denoised signal from the noisy ECG."
+    },
+    {
+      "id": 53,
+      "source": 13,
+      "target": 14,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Nie et al. and Behrenbruch and Lithgow independently experimented with new signal processing strategies based on wavelet transform (WT) in order to simplify and minimize the hardware, because WT inherently supports all the features of signal processing provided by separate hardware and microprocessors but in fewer units."
+    },
+    {
+      "id": 54,
+      "source": 15,
+      "target": 16,
+      "polarity": "positive",
+      "edge_type": "causes",
+      "text_evidence": "Baseline wandering removal has been addressed in the literature individually. Baseline estimation (...)"
+    },
+    {
+      "id": 55,
+      "source": 16,
+      "target": 17,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Baseline estimation using cubic spline"
+    },
+    {
+      "id": 56,
+      "source": 19,
+      "target": 18,
+      "polarity": "positive",
+      "edge_type": "must be followed by",
+      "text_evidence": "baseline construction by linearly interpolating between pre-known isoelectric levels estimated from PR intervals"
+    },
+    {
+      "id": 57,
+      "source": 20,
+      "target": 19,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "baseline construction by linearly interpolating between pre-known isoelectric levels estimated from PR intervals"
+    },
+    {
+      "id": 58,
+      "source": 15,
+      "target": 20,
+      "polarity": "positive",
+      "edge_type": "causes",
+      "text_evidence": "Baseline wandering removal has been addressed in the literature individually. (...) baseline construction (...)"
+    },
+    {
+      "id": 59,
+      "source": 15,
+      "target": 21,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Baseline wandering removal (...) linear filtering (...) are the major approaches in this field."
+    },
+    {
+      "id": 60,
+      "source": 15,
+      "target": 22,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Baseline wandering removal (...) the use of wavelet packets (...) are the major approaches in this field."
+    },
+    {
+      "id": 61,
+      "source": 15,
+      "target": 23,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Baseline wandering removal (...) wavelet based Wiener filtering techniques are the major approaches in this field."
+    },
+    {
+      "id": 62,
+      "source": 24,
+      "target": 25,
+      "polarity": "positive",
+      "edge_type": "must be followed by",
+      "text_evidence": "In WT the decomposed wavelet coefficient is thresholded"
+    },
+    {
+      "id": 63,
+      "source": 25,
+      "target": 26,
+      "polarity": "positive",
+      "edge_type": "must be followed by",
+      "text_evidence": "decomposed wavelet coefficient is thresholded and after that reconstructed using Inverse Discrete Wavelet Transform (IDWT)"
+    },
+    {
+      "id": 64,
+      "source": 25,
+      "target": 27,
+      "polarity": "positive",
+      "edge_type": "mandatorily implies",
+      "text_evidence": "In WT the decomposed wavelet coefficient is thresholded (...). Another problem of choosing threshold value arises."
+    },
+    {
+      "id": 65,
+      "source": 27,
+      "target": 28,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Many methods exist for choosing the value of threshold and S-median is one of them. (...) They used the tuning factor b as unity in most of the cases"
+    },
+    {
+      "id": 66,
+      "source": 27,
+      "target": 29,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "we also proposed a novel algorithm named modified S-median to find an adaptive value of the threshold"
+    },
+    {
+      "id": 67,
+      "source": 31,
+      "target": 30,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Symlet wavelet was chosen to remove the noise from ECG signal as its scaling function and wavelet function is similar to ECG waveforms"
+    },
+    {
+      "id": 68,
+      "source": 35,
+      "target": 32,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Different noises were tested on the ECG data recorded from BIOPAC data acquisition system (...) The noisy signal was generated by adding (...) white (...) noise"
+    },
+    {
+      "id": 69,
+      "source": 33,
+      "target": 34,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Different noises were tested on the ECG data recorded from BIOPAC data acquisition system (...) The noisy signal was generated by adding real baseline wander (RBW)"
+    },
+    {
+      "id": 70,
+      "source": 33,
+      "target": 36,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Different noises were tested on the ECG data recorded from BIOPAC data acquisition system (...) The noisy signal was generated by adding (...) real electrode movement (REM)"
+    },
+    {
+      "id": 71,
+      "source": 33,
+      "target": 37,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Different noises were tested on the ECG data recorded from BIOPAC data acquisition system (...) The noisy signal was generated by adding (...) real motion artifact (RMA)"
+    },
+    {
+      "id": 72,
+      "source": 1,
+      "target": 6,
+      "polarity": "positive",
+      "edge_type": "may lead to",
+      "text_evidence": "misjudgment and omission of conventional ECG identification for the ECG features extraction (...) Therefore, the ECG signal denoising and preprocessing become an exclusive requirement."
+    },
+    {
+      "id": 73,
+      "source": 2,
+      "target": 6,
+      "polarity": "positive",
+      "edge_type": "may lead to",
+      "text_evidence": "reduces the diagnostic accuracy (...) Therefore, the ECG signal denoising and preprocessing become an exclusive requirement."
+    },
+    {
+      "id": 74,
+      "source": 6,
+      "target": 8,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "the ECG signal denoising and preprocessing become an exclusive requirement. (...) many approaches have been reported to address ECG enhancement. Among them, adaptive filter architecture is common"
+    },
+    {
+      "id": 75,
+      "source": 6,
+      "target": 10,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "the ECG signal denoising and preprocessing become an exclusive requirement. (...) principal component analysis (...) were used to extract a denoised signal from the noisy ECG."
+    },
+    {
+      "id": 76,
+      "source": 6,
+      "target": 11,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "the ECG signal denoising and preprocessing become an exclusive requirement. (...) independent component analysis (...) were used to extract a denoised signal from the noisy ECG."
+    },
+    {
+      "id": 77,
+      "source": 6,
+      "target": 12,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "the ECG signal denoising and preprocessing become an exclusive requirement. (...) neural networks were used to extract a denoised signal from the noisy ECG."
+    },
+    {
+      "id": 78,
+      "source": 6,
+      "target": 14,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "the ECG signal denoising and preprocessing become an exclusive requirement. (...) A multi-resolution characteristics based denoising technique using wavelet transform (WT) have also acknowledged among the researchers in recent years."
+    },
+    {
+      "id": 79,
+      "source": 27,
+      "target": 38,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Many methods exist for choosing the value of threshold and S-median is one of them. (...) optimal value of b is desirable for denoising."
+    },
+    {
+      "id": 80,
+      "source": 38,
+      "target": 39,
+      "polarity": "positive",
+      "edge_type": "mandatorily implies",
+      "text_evidence": "S-median (...) optimal value of b is desirable for denoising."
+    },
+    {
+      "id": 81,
+      "source": 35,
+      "target": 40,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Different noises were tested on the ECG data recorded from BIOPAC data acquisition system (...) The noisy signal was generated by adding (...) color noise"
+    },
+    {
+      "id": 82,
+      "source": 41,
+      "target": 30,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "This modified version of Daubechies wavelet is known as Symlet wavelet (...) can preserve better spectral information"
+    },
+    {
+      "id": 83,
+      "source": 42,
+      "target": 43,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "As CWT is much redundant representation, it can be described using a dyadic or octave wavelet transform."
+    }
+  ]
+}

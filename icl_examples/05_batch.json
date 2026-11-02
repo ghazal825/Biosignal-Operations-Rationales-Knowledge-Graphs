@@ -1,0 +1,450 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "name": "bandpass filtering",
+      "node_type": "operation",
+      "text_evidence": "The frequency range of 0.1–100 Hz for the bandpass filtering is most often used. Other frequency ranges used in bandpass filtering are 1–40 Hz, 0.5–40 Hz, 1–30 Hz, 0.4–40 Hz, 0.05–40 Hz, 0.5–50 Hz, 1–120 Hz and 1–100 Hz.",
+      "parameters": [
+        "frequency_range_hz: {[0.1, 100], [1, 40], [0.5, 40], [1, 30], [0.4, 40], [0.05, 40], [0.5, 50], [1, 120], [1, 100]}"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "delete muscle noise",
+      "node_type": "rational",
+      "text_evidence": "delete muscle noise"
+    },
+    {
+      "id": 3,
+      "name": "delete baseline wander",
+      "node_type": "rational",
+      "text_evidence": "delete (...) baseline wander"
+    },
+    {
+      "id": 4,
+      "name": "delete low- and high-frequency noise components",
+      "node_type": "rational",
+      "text_evidence": "delete (...) low- and high-frequency noise components"
+    },
+    {
+      "id": 5,
+      "name": "limit ADC saturation",
+      "node_type": "rational",
+      "text_evidence": "limit ADC saturation"
+    },
+    {
+      "id": 6,
+      "name": "address antialiasing",
+      "node_type": "rational",
+      "text_evidence": "address antialiasing"
+    },
+    {
+      "id": 7,
+      "name": "low-pass filter",
+      "node_type": "operation",
+      "text_evidence": "Low-pass filters with the cut-off frequency of 11 Hz, 90 Hz, 30 Hz, 35 Hz, 50 Hz, 100 Hz and 70 Hz",
+      "parameters": [
+        "cut_off_frequency_hz: {11, 30, 35, 50, 70, 90, 100}"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "delete high-frequency noise",
+      "node_type": "rational",
+      "text_evidence": "delete high-frequency noise"
+    },
+    {
+      "id": 9,
+      "name": "delete power line interference",
+      "node_type": "rational",
+      "text_evidence": "delete (...) power line interference"
+    },
+    {
+      "id": 10,
+      "name": "high-pass filter",
+      "node_type": "operation",
+      "text_evidence": "high-pass filter",
+      "parameters": []
+    },
+    {
+      "id": 11,
+      "name": "remove the DC offset",
+      "node_type": "rational",
+      "text_evidence": "to remove the DC offset, which in turn is largely caused by the electrode/gel/body interface"
+    },
+    {
+      "id": 12,
+      "name": "supress drift",
+      "node_type": "rational",
+      "text_evidence": "drift suppression"
+    },
+    {
+      "id": 13,
+      "name": "moving average filter",
+      "node_type": "operation",
+      "text_evidence": "moving average filter",
+      "parameters": []
+    },
+    {
+      "id": 14,
+      "name": "delete power line interference",
+      "node_type": "rational",
+      "text_evidence": "delete (...) power line interference"
+    },
+    {
+      "id": 15,
+      "name": "to smooth the signal",
+      "node_type": "rational",
+      "text_evidence": "smooth the signal"
+    },
+    {
+      "id": 16,
+      "name": "high-pass filter",
+      "node_type": "operation",
+      "text_evidence": "High-pass filters with cut-off frequencies of 0.5 Hz, 1 Hz, 2.2 Hz and 5 Hz",
+      "parameters": [
+        "cut_off_frequency_hz: {0.5, 1, 2.2, 5}"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "remove baseline wander",
+      "node_type": "rational",
+      "text_evidence": "remove baseline wander"
+    },
+    {
+      "id": 18,
+      "name": "attenuate several singular frequencies while preserving the others",
+      "node_type": "rational",
+      "text_evidence": "attenuate several singular frequencies while preserving the others"
+    },
+    {
+      "id": 19,
+      "name": "notch filter",
+      "node_type": "operation",
+      "text_evidence": "notch filter",
+      "parameters": []
+    },
+    {
+      "id": 20,
+      "name": "unusual ringing",
+      "node_type": "rational",
+      "text_evidence": "unusual ringing, especially for waveforms with high rates of change"
+    },
+    {
+      "id": 21,
+      "name": "notch filter",
+      "node_type": "operation",
+      "text_evidence": "High \"quality\" notch filters can be created in software that target only 50 or 60 Hz",
+      "parameters": [
+        "center_hz: {50, 60}"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "remove power line interference",
+      "node_type": "rational",
+      "text_evidence": "remove power line interference"
+    },
+    {
+      "id": 23,
+      "name": "suppress DC components",
+      "node_type": "rational",
+      "text_evidence": "suppress DC components"
+    },
+    {
+      "id": 24,
+      "name": "two median filters",
+      "node_type": "operation",
+      "text_evidence": "ECG signals are also filtered with two median filters that have 200 and 600 ms widths (...) The median filters usually have the order of two and fifty.",
+      "parameters": [
+        "small_width_ms: 200",
+        "large_width_ms: 600",
+        "orders: {2, 50}"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "remove baseline wander",
+      "node_type": "rational",
+      "text_evidence": "remove the baseline wander"
+    },
+    {
+      "id": 26,
+      "name": "remove P and T waves",
+      "node_type": "rational",
+      "text_evidence": "remove (...) the P and T waves"
+    },
+    {
+      "id": 27,
+      "name": "remove the ECG isoelectric line",
+      "node_type": "rational",
+      "text_evidence": "remove the ECG isoelectric line"
+    },
+    {
+      "id": 28,
+      "name": "three median filters",
+      "node_type": "operation",
+      "text_evidence": "series of three median filters (...) The median filters usually have the order of two and fifty.",
+      "parameters": [
+        "order: {2, 50}"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Median Filter",
+      "node_type": "operation",
+      "text_evidence": "local median filter",
+      "parameters": []
+    },
+    {
+      "id": 30,
+      "name": "Decreases Special Effects and Arbitrary Noise",
+      "node_type": "rational",
+      "text_evidence": "decrease the especial effects and arbitrary noise"
+    },
+    {
+      "id": 31,
+      "name": "remove the high-frequency component",
+      "node_type": "rational",
+      "text_evidence": "remove the high-frequency component in the ECG waveform"
+    },
+    {
+      "id": 32,
+      "name": "low-pass filter",
+      "node_type": "operation",
+      "text_evidence": "low-pass filter",
+      "parameters": []
+    },
+    {
+      "id": 33,
+      "name": "determine the level of high-frequency noise that is available in any beat",
+      "node_type": "rational",
+      "text_evidence": "determine the level of high-frequency noise that is available in any beat"
+    },
+    {
+      "id": 34,
+      "name": "Deleted Baseline Wandering",
+      "node_type": "rational",
+      "text_evidence": "delete the baseline wandering"
+    },
+    {
+      "id": 35,
+      "name": "two median filters",
+      "node_type": "operation",
+      "parameters": [],
+      "text_evidence": "two steps of median filtering"
+    }
+  ],
+  "edges": [
+    {
+      "id": 36,
+      "source": 2,
+      "target": 1,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Bandpass filtering is widely used to delete muscle noise"
+    },
+    {
+      "id": 37,
+      "source": 3,
+      "target": 1,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Bandpass filtering is widely used to delete (...) baseline wander"
+    },
+    {
+      "id": 38,
+      "source": 6,
+      "target": 1,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Bandpass filtering is widely used to (...) address antialiasing."
+    },
+    {
+      "id": 39,
+      "source": 5,
+      "target": 1,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Bandpass filtering is widely used to (...) limit ADC saturation"
+    },
+    {
+      "id": 40,
+      "source": 4,
+      "target": 1,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Bandpass filtering is widely used to delete (...) low- and high-frequency noise components"
+    },
+    {
+      "id": 41,
+      "source": 8,
+      "target": 7,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Low-pass filters (...) were used to delete high-frequency noise"
+    },
+    {
+      "id": 42,
+      "source": 9,
+      "target": 7,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Low-pass filters (...) were used to delete (...) power line interference"
+    },
+    {
+      "id": 43,
+      "source": 11,
+      "target": 10,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "The main intention of a high-pass filter in ECG work is to remove the DC offset"
+    },
+    {
+      "id": 44,
+      "source": 14,
+      "target": 1,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Bandpass filtering is widely used to delete (...) power line interference"
+    },
+    {
+      "id": 45,
+      "source": 1,
+      "target": 15,
+      "polarity": "positive",
+      "edge_type": "can lead to",
+      "text_evidence": "The output of the bandpass filter proceeds through a moving average filter to smooth the signal"
+    },
+    {
+      "id": 46,
+      "source": 15,
+      "target": 13,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "The output of the bandpass filter proceeds through a moving average filter to smooth the signal"
+    },
+    {
+      "id": 47,
+      "source": 12,
+      "target": 16,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "High-pass filters with cut-off frequencies of 0.5 Hz, 1 Hz, 2.2 Hz and 5 Hz were also used to (...) and for drift suppression"
+    },
+    {
+      "id": 48,
+      "source": 17,
+      "target": 16,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "High-pass filters with cut-off frequencies of 0.5 Hz, 1 Hz, 2.2 Hz and 5 Hz were also used to remove baseline wander"
+    },
+    {
+      "id": 49,
+      "source": 18,
+      "target": 19,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "The motivation behind a notch filter is to attenuate several singular frequencies while preserving the others"
+    },
+    {
+      "id": 50,
+      "source": 21,
+      "target": 20,
+      "polarity": "positive",
+      "edge_type": "can lead to",
+      "text_evidence": "High \"quality\" notch filters can be created in software that target only 50 or 60 Hz, but the drawback of these filters is that they can create unusual ringing"
+    },
+    {
+      "id": 51,
+      "source": 22,
+      "target": 21,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Notch filters centered approximately 50 Hz and 60 Hz were used to remove power line interference"
+    },
+    {
+      "id": 52,
+      "source": 23,
+      "target": 21,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Notch filters centered approximately 50 Hz and 60 Hz were used to (...) suppress DC components."
+    },
+    {
+      "id": 53,
+      "source": 22,
+      "target": 19,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Notch filters (...) were used to remove power line interference (...) also used a notch filter for the same purpose."
+    },
+    {
+      "id": 54,
+      "source": 23,
+      "target": 19,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Notch filters (...) were used to (...) suppress DC components. (...) also used a notch filter for the same purpose."
+    },
+    {
+      "id": 55,
+      "source": 25,
+      "target": 24,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "ECG signals are also filtered with two median filters that have 200 and 600 ms widths to remove the baseline wander"
+    },
+    {
+      "id": 56,
+      "source": 26,
+      "target": 24,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "ECG signals are also filtered with two median filters that have 200 and 600 ms widths to remove the (...) P and T waves"
+    },
+    {
+      "id": 57,
+      "source": 27,
+      "target": 28,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "A series of three median filters was used to remove the ECG isoelectric line"
+    },
+    {
+      "id": 58,
+      "source": 30,
+      "target": 29,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "A local median filter is used (...) to decrease the especial effects and arbitrary noise"
+    },
+    {
+      "id": 59,
+      "source": 31,
+      "target": 32,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "A low-pass filter is designed to remove the high-frequency component in the ECG waveform"
+    },
+    {
+      "id": 60,
+      "source": 33,
+      "target": 10,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "high-pass filter to determine the level of high-frequency noise that is available in any beat."
+    },
+    {
+      "id": 61,
+      "source": 34,
+      "target": 35,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "two steps of median filtering is used to delete the baseline wandering"
+    }
+  ]
+}

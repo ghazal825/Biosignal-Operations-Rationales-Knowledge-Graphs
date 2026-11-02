@@ -1,0 +1,173 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "name": "dynamic approximation filter",
+      "node_type": "operation",
+      "text_evidence": "dynamic approximation filter which uses a varying number of weight coefficients and tries changing the number of samples, according to the slope of ECG signal",
+      "parameters": []
+    },
+    {
+      "id": 2,
+      "name": "preserving ECG geometrical properties",
+      "node_type": "rational",
+      "text_evidence": " while retaining the original geometrical properties of the ECG signal."
+    },
+    {
+      "id": 3,
+      "name": "threshold-based wavelet transformation",
+      "node_type": "operation",
+      "text_evidence": "a threshold-based wavelet transformation scheme ",
+      "parameters": []
+    },
+    {
+      "id": 4,
+      "name": "discrete wavelet transformation",
+      "node_type": "operation",
+      "text_evidence": "discrete wavelet transformation",
+      "parameters": []
+    },
+    {
+      "id": 5,
+      "name": "suppress EMG noise",
+      "node_type": "rational",
+      "text_evidence": "suppress or remove EMG artefacts from the ECG signal"
+    },
+    {
+      "id": 6,
+      "name": "lowpass filter",
+      "node_type": "operation",
+      "text_evidence": "band filter(low pass)",
+      "parameters": []
+    },
+    {
+      "id": 7,
+      "name": "least-mean-square (LMS) adaptive filter",
+      "node_type": "operation",
+      "text_evidence": "adaptive filter or their variants like least-mean-square (LMS)",
+      "parameters": []
+    },
+    {
+      "id": 8,
+      "name": "recursive least-squares (RLS) adaptive filter",
+      "node_type": "operation",
+      "text_evidence": "adaptive filter or their variants like (...) and recursive least-squares (RLS)",
+      "parameters": []
+    },
+    {
+      "id": 9,
+      "name": "exercise ECG or long-term wearable ECG",
+      "node_type": "rational",
+      "text_evidence": "exercise ECG or long-term ECG particularly with wearable devices"
+    },
+    {
+      "id": 10,
+      "name": "EMG contamination of ECG",
+      "node_type": "rational",
+      "text_evidence": "EMG contaminated ECG signal"
+    },
+    {
+      "id": 11,
+      "name": "reduced QRS wave sharpness and important information",
+      "node_type": "rational",
+      "text_evidence": "reduction in the sharpness of Q, R and S wave important component of the ECG signal. Subsequently, the artefacts may lose their commercial shapes and subsequently some important information."
+    },
+    {
+      "id": 12,
+      "name": "bandpass filter",
+      "node_type": "operation",
+      "text_evidence": "band filter(low pass)",
+      "parameters": []
+    }
+  ],
+  "edges": [
+    {
+      "id": 13,
+      "source": 2,
+      "target": 1,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "methods that are used to suppress EMG artefacts lead to reduction in the sharpness of Q, R and S wave important component of the ECG signal (...) address this challenge by applying a dynamic approximation filter"
+    },
+    {
+      "id": 14,
+      "source": 2,
+      "target": 3,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "a threshold-based wavelet transformation scheme has also been experimented with. It is used to removes EMG artefacts while retaining the original geometrical properties of the ECG signal."
+    },
+    {
+      "id": 15,
+      "source": 5,
+      "target": 4,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "discrete wavelet transformation, (...) are used to suppress or remove EMG artefacts from the ECG signal."
+    },
+    {
+      "id": 16,
+      "source": 5,
+      "target": 6,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "low pass (...) are used to suppress or remove EMG artefacts from the ECG signal."
+    },
+    {
+      "id": 17,
+      "source": 5,
+      "target": 7,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "least-mean-square (LMS) and (...) are used to suppress or remove EMG artefacts from the ECG signal"
+    },
+    {
+      "id": 18,
+      "source": 5,
+      "target": 2,
+      "polarity": "positive",
+      "edge_type": "in conjunction with",
+      "text_evidence": "It id used to removes EMG artefacts while retaining the original geometrical properties of the ECG signal"
+    },
+    {
+      "id": 19,
+      "source": 5,
+      "target": 8,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "recursive least-squares (RLS) are used to suppress or remove EMG artefacts from the ECG signal"
+    },
+    {
+      "id": 20,
+      "source": 9,
+      "target": 10,
+      "polarity": "positive",
+      "edge_type": "may lead to",
+      "text_evidence": "EMG contaminated ECG signal (...) is more likely to find this type of noise in exercise ECG or long-term ECG (...) because it is not possible to avoid muscle activity in such cases."
+    },
+    {
+      "id": 21,
+      "source": 10,
+      "target": 5,
+      "polarity": "positive",
+      "edge_type": "may lead to",
+      "text_evidence": "an EMG contaminated ECG signal (...) Different type of filters (...) are used to suppress or remove EMG artefacts from the ECG signal."
+    },
+    {
+      "id": 22,
+      "source": 6,
+      "target": 11,
+      "polarity": "positive",
+      "edge_type": "can lead to",
+      "text_evidence": "the challenge faced is that techniques such as low-pass filtering methods that are used to suppress EMG artefacts lead to reduction in the sharpness of Q, R and S wave important component of the ECG signal. Subsequently, the artefacts may lose their commercial shapes and subsequently some important information."
+    },
+    {
+      "id": 23,
+      "source": 5,
+      "target": 12,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "band filter(low pass) (...) are used to suppress or remove EMG artefacts from the ECG signal."
+    }
+  ]
+}

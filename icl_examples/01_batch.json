@@ -1,0 +1,381 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "name": "SDNN",
+      "node_type": "operation",
+      "text_evidence": "SDNN, measured in the unit of milliseconds (ms), is the standard deviation of the normal beat intervals (denoted NN intervals)",
+      "parameters": []
+    },
+    {
+      "id": 2,
+      "name": "Capture short-term high-frequency variation and long-term low-frequency components",
+      "node_type": "rational",
+      "text_evidence": "encompasses both short-term high-frequency variation (mostly parasympathetically-mediated RSA) and long-term low-frequency components"
+    },
+    {
+      "id": 3,
+      "name": "longer periods (especially 24h)",
+      "node_type": "rational",
+      "text_evidence": "accuracy of SDNN is higher for longer recording periods, especially over 24 h periods"
+    },
+    {
+      "id": 4,
+      "name": "SDANN",
+      "node_type": "operation",
+      "text_evidence": "the standard deviation of average NN is extracted for each 5 min segment of the long-term HR time series (e.g., 24 h recordings) (SDANN)",
+      "parameters": [
+        "segment_length_min: 5"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Capture long-term components contributing to HRV",
+      "node_type": "rational",
+      "text_evidence": "is an estimate of long-term components contributing to HRV"
+    },
+    {
+      "id": 6,
+      "name": "SDNNI (SDNN Index)",
+      "node_type": "operation",
+      "text_evidence": "SDNN index (SDNNI) is the mean of the standard deviations of NN calculated per 5 min segment",
+      "parameters": [
+        "segment_length_min: 5"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Assess HR variability within short intervals",
+      "node_type": "rational",
+      "text_evidence": "assesses the variability within the short intervals"
+    },
+    {
+      "id": 8,
+      "name": "Coefficient of Variation of NN (CV)",
+      "node_type": "operation",
+      "text_evidence": "Coefficient of Variation of NN (CV), i.e., the ratio of the standard deviation to the mean",
+      "parameters": []
+    },
+    {
+      "id": 9,
+      "name": "compare groups (individuals or conditions) with different HR baselines",
+      "node_type": "rational",
+      "text_evidence": "could be more stable when comparing individuals or conditions with different HR baselines"
+    },
+    {
+      "id": 10,
+      "name": "Median Absolute Deviation (MAD)",
+      "node_type": "operation",
+      "text_evidence": "Median Absolute Deviation (MAD; a median-based index of variability)",
+      "parameters": []
+    },
+    {
+      "id": 11,
+      "name": "Less sensitive to outliers and measurement errors",
+      "node_type": "rational",
+      "text_evidence": "are less influenced by outliers and, thus, less sensitive to measurement errors"
+    },
+    {
+      "id": 12,
+      "name": "Interquartile Range (IQR)",
+      "node_type": "operation",
+      "text_evidence": "interquartile range (IQR)",
+      "parameters": []
+    },
+    {
+      "id": 13,
+      "name": "SDSD",
+      "node_type": "operation",
+      "text_evidence": "standard deviation of the successive difference (SDSD)",
+      "parameters": []
+    },
+    {
+      "id": 14,
+      "name": "capture short-term variations in HR",
+      "node_type": "rational",
+      "text_evidence": "indicative of short-term variations in HR"
+    },
+    {
+      "id": 15,
+      "name": "RMSSD",
+      "node_type": "operation",
+      "text_evidence": "root mean square of successive difference (RMSSD)",
+      "parameters": []
+    },
+    {
+      "id": 16,
+      "name": "Generally preferred over other NNI-based indices due to better statistical properties",
+      "node_type": "rational",
+      "text_evidence": "generally preferred by researchers due to its better statistical properties."
+    },
+    {
+      "id": 17,
+      "name": "estimate PNS activity",
+      "node_type": "rational",
+      "text_evidence": "more influenced by the PNS activity"
+    },
+    {
+      "id": 18,
+      "name": "short-term time windows",
+      "node_type": "rational",
+      "text_evidence": "well-suited for short-term time windows"
+    },
+    {
+      "id": 19,
+      "name": "pNN20",
+      "node_type": "operation",
+      "text_evidence": "the proportion of successive NN intervals that are larger than a given threshold (e.g., 20 ms or 50 ms—pNN20 and pNN50, respectively)",
+      "parameters": [
+        "threshold_ms: 20"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "pNN50",
+      "node_type": "operation",
+      "text_evidence": "the proportion of successive NN intervals that are larger than a given threshold (e.g., 20 ms or 50 ms—pNN20 and pNN50, respectively)",
+      "parameters": [
+        "threshold_ms: 50"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "HRV Triangular Index (HTI)",
+      "node_type": "operation",
+      "text_evidence": "HRV triangular index (HTI)",
+      "parameters": []
+    },
+    {
+      "id": 22,
+      "name": "less sensitive to measurement errors",
+      "node_type": "rational",
+      "text_evidence": "less sensitive to measurement errors than basic dispersion-based indices"
+    },
+    {
+      "id": 23,
+      "name": "TTIN (Triangular interpolation of the NN interval histogram)",
+      "node_type": "operation",
+      "text_evidence": "the triangular interpolation of NN histogram (TTIN)",
+      "parameters": []
+    },
+    {
+      "id": 24,
+      "name": "Lorenz plot",
+      "node_type": "operation",
+      "text_evidence": "other geometrical properties of the NN scatter plots (e.g., Lorenz plots)",
+      "parameters": []
+    },
+    {
+      "id": 25,
+      "name": "estimate HR short-term components",
+      "node_type": "rational",
+      "text_evidence": "is an estimate of short-term components that modulate HR signals"
+    },
+    {
+      "id": 26,
+      "name": "estimate the vagally mediated fluctuations in HR",
+      "node_type": "rational",
+      "text_evidence": "estimate the vagally mediated fluctuations in HR"
+    },
+    {
+      "id": 27,
+      "name": "small number of NNIs (< 20 min)",
+      "node_type": "rational",
+      "text_evidence": "a large number of NN intervals is required for reliable assessment. (...) recordings of at least 20 min are recommended for accurate computation"
+    }
+  ],
+  "edges": [
+    {
+      "id": 28,
+      "source": 2,
+      "target": 1,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Mathematically, SDNN is the square root of the total variance in the entire recording and, therefore, it encompasses both short-term high frequency variation (mostly due to parasympathetically-mediated RSA) and long-term low frequency components of the HR signals."
+    },
+    {
+      "id": 29,
+      "source": 3,
+      "target": 1,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Some proponents argue that the accuracy of SDNN is higher for longer recording periods, especially over 24 h periods"
+    },
+    {
+      "id": 30,
+      "source": 5,
+      "target": 4,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "While SDANN is an estimate of long-term components contributing to HRV"
+    },
+    {
+      "id": 31,
+      "source": 7,
+      "target": 6,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "SDNNI assesses the variability within the short intervals"
+    },
+    {
+      "id": 32,
+      "source": 9,
+      "target": 8,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Coefficient of Variation of NN (CV) (...) which could be more stable when comparing individuals or conditions with different HR baselines"
+    },
+    {
+      "id": 33,
+      "source": 11,
+      "target": 10,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "the Median Absolute Deviation (...) are less influenced by outliers and, thus, less sensitive to measurement errors"
+    },
+    {
+      "id": 34,
+      "source": 11,
+      "target": 12,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "the interquartile range (IQR), that are less influenced by outliers and, thus, less sensitive to measurement errors"
+    },
+    {
+      "id": 35,
+      "source": 14,
+      "target": 13,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "the standard deviation of the successive difference (SDSD) (...) derived from beat-to-beat differences (...) are mostly indicative of short-term variations in HR."
+    },
+    {
+      "id": 36,
+      "source": 16,
+      "target": 15,
+      "polarity": "positive",
+      "edge_type": "should apply",
+      "text_evidence": "Difference-Based Indices (...) the difference between successive NN intervals (...) Among the highly correlated difference-based indices, RMSSD is generally preferred by researchers due to its better statistical properties."
+    },
+    {
+      "id": 37,
+      "source": 17,
+      "target": 15,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "RMSSD is more influenced by the PNS activity"
+    },
+    {
+      "id": 38,
+      "source": 18,
+      "target": 15,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "RMSSD is generally preferred by researchers due to its better statistical properties. (...) Its statistical robustness makes it well-suited for short-term time windows"
+    },
+    {
+      "id": 39,
+      "source": 22,
+      "target": 21,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "HRV triangular index (HTI) (...) are less sensitive to measurement errors as compared to basic dispersion-based indices"
+    },
+    {
+      "id": 40,
+      "source": 22,
+      "target": 23,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "triangular interpolation of NN histogram (TTIN) (...) are less sensitive to measurement errors as compared to basic dispersion-based indices"
+    },
+    {
+      "id": 41,
+      "source": 1,
+      "target": 4,
+      "polarity": "negative",
+      "edge_type": "should not be followed by",
+      "text_evidence": "(SDANN). It is highly correlated with SDNN and has been said to provide little additional information beyond what SDNN is able to."
+    },
+    {
+      "id": 42,
+      "source": 25,
+      "target": 6,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "SDNNI (...) is an estimate of short-term components that modulate HR signals"
+    },
+    {
+      "id": 43,
+      "source": 14,
+      "target": 15,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "As these measures are derived from beat-to-beat differences, they are mostly indicative of short-term variations in HR. Among the highly correlated difference-based indices, RMSSD is generally preferred by researchers due to its better statistical properties"
+    },
+    {
+      "id": 44,
+      "source": 26,
+      "target": 17,
+      "polarity": "positive",
+      "edge_type": "may lead to",
+      "text_evidence": "more influenced by the PNS activity and hence is often used to estimate the vagally mediated fluctuations in HR"
+    },
+    {
+      "id": 45,
+      "source": 14,
+      "target": 19,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "the proportion of successive NN intervals that are larger than a given threshold (e.g., 20 ms or 50 ms— pNN20 and pNN50 , respectively). As these measures are derived from beat-to-beat differences, they are mostly indicative of short-term variations in HR."
+    },
+    {
+      "id": 46,
+      "source": 14,
+      "target": 20,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "the proportion of successive NN intervals that are larger than a given threshold (e.g., 20 ms or 50 ms— pNN20 and pNN50 , respectively). As these measures are derived from beat-to-beat differences, they are mostly indicative of short-term variations in HR."
+    },
+    {
+      "id": 47,
+      "source": 22,
+      "target": 24,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Lorenz plots (...) are less sensitive to measurement errors as compared to basic dispersion-based indices"
+    },
+    {
+      "id": 48,
+      "source": 27,
+      "target": 24,
+      "polarity": "negative",
+      "edge_type": "should not apply",
+      "text_evidence": "geometric methods (...) a large number of NN intervals is required for reliable assessment. (...) recordings of at least 20 min are recommended for accurate computation"
+    },
+    {
+      "id": 49,
+      "source": 27,
+      "target": 23,
+      "polarity": "negative",
+      "edge_type": "should not apply",
+      "text_evidence": "geometric methods (...) a large number of NN intervals is required for reliable assessment. (...) recordings of at least 20 min are recommended for accurate computation"
+    },
+    {
+      "id": 50,
+      "source": 27,
+      "target": 21,
+      "polarity": "negative",
+      "edge_type": "should not apply",
+      "text_evidence": "geometric methods (...) a large number of NN intervals is required for reliable assessment. (...) recordings of at least 20 min are recommended for accurate computation"
+    },
+    {
+      "id": 51,
+      "source": 4,
+      "target": 1,
+      "polarity": "negative",
+      "edge_type": "should not be followed by",
+      "text_evidence": "(SDANN). It is highly correlated with SDNN and has been said to provide little additional information beyond what SDNN is able to."
+    }
+  ]
+}

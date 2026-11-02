@@ -1,0 +1,721 @@
+pair_id,task,batch,node_type,gen_id,gt_id,rank,why,global_score,label,comment,gt_name,gen_name
+T001.1,T001,04_batch,operation,15,43,4,pool (rank 4),0.6113,incorrect,,Discrete wavelet transform (DWT),Wavelet coefficient thresholding
+T001.2,T001,04_batch,operation,22,43,6,"audit (rank 6, ranks 6-10)",0.5913,incorrect,,Discrete wavelet transform (DWT),Wavelet-based Wiener filtering
+T001.3,T001,04_batch,operation,16,43,1,pool (rank 1),0.6835,incorrect,,Discrete wavelet transform (DWT),Inverse discrete wavelet reconstruction
+T001.4,T001,04_batch,operation,14,43,3,pool (rank 3),0.6495,incorrect,,Discrete wavelet transform (DWT),Wavelet-transform denoising
+T001.5,T001,04_batch,operation,35,43,2,pool (rank 2),0.6789,incorrect,,Discrete wavelet transform (DWT),Continuous wavelet transform
+T001.6,T001,04_batch,operation,21,43,5,pool (rank 5),0.6101,incorrect,,Discrete wavelet transform (DWT),Wavelet packets
+T002.1,T002,05_batch,operation,26,35,3,pool (rank 3),0.7306,incorrect,,two median filters,Three-stage median filtering
+T002.2,T002,05_batch,operation,31,35,1,pool (rank 1),0.9336,correct,,two median filters,Two-step median filtering
+T002.3,T002,05_batch,operation,29,35,2,pool (rank 2),0.8065,incorrect,,two median filters,Local median filtering
+T002.4,T002,05_batch,operation,5,35,4,pool (rank 4),0.6445,incorrect,,two median filters,Moving average filtering
+T002.5,T002,05_batch,operation,28,35,5,pool (rank 5),0.6237,incorrect,,two median filters,Median filtering
+T003.1,T003,01_batch,operation,28,12,3,pool (rank 3),0.5604,incorrect,,Interquartile Range (IQR),Triangular interpolation of NN histogram
+T003.2,T003,01_batch,operation,13,12,5,pool (rank 5),0.5153,incorrect,,Interquartile Range (IQR),Median absolute deviation
+T003.3,T003,01_batch,operation,27,12,2,pool (rank 2),0.5789,incorrect,,Interquartile Range (IQR),HRV triangular index
+T003.4,T003,01_batch,operation,29,12,4,pool (rank 4),0.5164,incorrect,,Interquartile Range (IQR),NN scatter-plot geometric indices
+T003.5,T003,01_batch,operation,14,12,1,pool (rank 1),0.9216,correct,,Interquartile Range (IQR),Interquartile range
+T004.1,T004,01_batch,rational,30,26,6,"audit (rank 6, ranks 6-10)",0.4101,incorrect,,estimate the vagally mediated fluctuations in HR,Quantify HRV geometrically
+T004.2,T004,01_batch,rational,3,26,4,pool (rank 4),0.4669,incorrect,,estimate the vagally mediated fluctuations in HR,Short- and long-term HR variation
+T004.3,T004,01_batch,rational,9,26,5,pool (rank 5),0.4222,incorrect,,estimate the vagally mediated fluctuations in HR,Estimate short-term HR components
+T004.4,T004,01_batch,rational,21,26,2,pool (rank 2),0.5718,incorrect,,estimate the vagally mediated fluctuations in HR,Short-term HR variations
+T004.5,T004,01_batch,rational,8,26,3,pool (rank 3),0.4826,incorrect,,estimate the vagally mediated fluctuations in HR,Estimate long-term HRV components
+T004.6,T004,01_batch,rational,24,26,1,pool (rank 1),0.9866,correct,,estimate the vagally mediated fluctuations in HR,Estimate vagally mediated HR fluctuations
+T005.1,T005,04_batch,operation,21,22,1,pool (rank 1),0.955,correct,,use of wavelet packets,Wavelet packets
+T005.2,T005,04_batch,operation,14,22,5,pool (rank 5),0.592,incorrect,,use of wavelet packets,Wavelet-transform denoising
+T005.3,T005,04_batch,operation,22,22,3,pool (rank 3),0.6108,incorrect,,use of wavelet packets,Wavelet-based Wiener filtering
+T005.4,T005,04_batch,operation,16,22,4,pool (rank 4),0.6063,incorrect,,use of wavelet packets,Inverse discrete wavelet reconstruction
+T005.5,T005,04_batch,operation,15,22,2,pool (rank 2),0.6512,incorrect,,use of wavelet packets,Wavelet coefficient thresholding
+T006.1,T006,04_batch,rational,28,6,2,pool (rank 2),0.4653,incorrect,,ECG signal denoising and preprocessing,Improve ECG quality
+T006.2,T006,04_batch,rational,43,6,3,pool (rank 3),0.439,incorrect,,ECG signal denoising and preprocessing,Denoising evaluation
+T006.3,T006,04_batch,rational,1,6,4,pool (rank 4),0.4192,incorrect,,ECG signal denoising and preprocessing,ECG noise contamination
+T006.4,T006,04_batch,rational,5,6,1,pool (rank 1),0.5145,incorrect,,ECG signal denoising and preprocessing,ECG enhancement
+T006.5,T006,04_batch,rational,31,6,5,pool (rank 5),0.3778,incorrect,,ECG signal denoising and preprocessing,Better correlation and denoising
+T007.1,T007,02_batch,operation,20,8,3,pool (rank 3),0.6616,incorrect,,wavelet transformation for QRS detection,Detected QRS subtraction
+T007.2,T007,02_batch,operation,15,8,4,pool (rank 4),0.6382,incorrect,,wavelet transformation for QRS detection,Neural-network QRS detection
+T007.3,T007,02_batch,operation,18,8,5,pool (rank 5),0.6156,incorrect,,wavelet transformation for QRS detection,Neural-network QRS cancellation
+T007.4,T007,02_batch,operation,14,8,1,pool (rank 1),0.7639,correct,,wavelet transformation for QRS detection,Wavelet-based QRS detection
+T007.5,T007,02_batch,operation,13,8,2,pool (rank 2),0.7289,incorrect,,wavelet transformation for QRS detection,QRS detection
+T008.1,T008,01_batch,rational,21,5,3,pool (rank 3),0.4971,incorrect,,Capture long-term components contributing to HRV,Short-term HR variations
+T008.2,T008,01_batch,rational,3,5,5,pool (rank 5),0.4373,incorrect,,Capture long-term components contributing to HRV,Short- and long-term HR variation
+T008.3,T008,01_batch,rational,8,5,1,pool (rank 1),0.8667,correct,,Capture long-term components contributing to HRV,Estimate long-term HRV components
+T008.4,T008,01_batch,rational,9,5,2,pool (rank 2),0.5535,incorrect,,Capture long-term components contributing to HRV,Estimate short-term HR components
+T008.5,T008,01_batch,rational,24,5,4,pool (rank 4),0.4439,incorrect,,Capture long-term components contributing to HRV,Estimate vagally mediated HR fluctuations
+T009.1,T009,04_batch,operation,54,34,2,pool (rank 2),0.566,incorrect,,add real baseline wander from MIT-BIH noise stress database,Baseline drift synthesis
+T009.2,T009,04_batch,operation,4,34,4,pool (rank 4),0.5411,incorrect,,add real baseline wander from MIT-BIH noise stress database,ECG denoising and preprocessing
+T009.3,T009,04_batch,operation,22,34,5,pool (rank 5),0.5209,incorrect,,add real baseline wander from MIT-BIH noise stress database,Wavelet-based Wiener filtering
+T009.4,T009,04_batch,operation,46,34,6,"audit (rank 6, ranks 6-10)",0.5162,incorrect,,add real baseline wander from MIT-BIH noise stress database,Normalized mean square error
+T009.5,T009,04_batch,operation,18,34,1,pool (rank 1),0.5885,incorrect,,add real baseline wander from MIT-BIH noise stress database,Cubic-spline baseline estimation
+T009.6,T009,04_batch,operation,9,34,3,pool (rank 3),0.5438,incorrect,,add real baseline wander from MIT-BIH noise stress database,Neural network denoising
+T010.1,T010,05_batch,rational,8,23,5,pool (rank 5),0.2485,incorrect,,suppress DC components,Remove high-frequency noise and power line interference
+T010.2,T010,05_batch,rational,10,23,2,pool (rank 2),0.4536,incorrect,,suppress DC components,Remove DC offset
+T010.3,T010,05_batch,rational,1,23,4,pool (rank 4),0.2547,incorrect,,suppress DC components,Remove ECG artifacts
+T010.4,T010,05_batch,rational,3,23,3,pool (rank 3),0.2624,incorrect,,suppress DC components,Remove muscle noise and frequency contaminants
+T010.5,T010,05_batch,rational,22,23,1,pool (rank 1),0.5846,incorrect,combined two rationales in one node (50% correct),suppress DC components,Remove power line interference and suppress DC
+T011.1,T011,04_batch,operation,16,25,4,pool (rank 4),0.6447,incorrect,,wavelet coefficient thresholding,Inverse discrete wavelet reconstruction
+T011.2,T011,04_batch,operation,22,25,3,pool (rank 3),0.6791,incorrect,,wavelet coefficient thresholding,Wavelet-based Wiener filtering
+T011.3,T011,04_batch,operation,15,25,1,pool (rank 1),1,correct,,wavelet coefficient thresholding,Wavelet coefficient thresholding
+T011.4,T011,04_batch,operation,21,25,2,pool (rank 2),0.6869,incorrect,,wavelet coefficient thresholding,Wavelet packets
+T011.5,T011,04_batch,operation,14,25,5,pool (rank 5),0.6365,incorrect,,wavelet coefficient thresholding,Wavelet-transform denoising
+T012.1,T012,05_batch,rational,30,12,3,pool (rank 3),0.2471,incorrect,,supress drift,Decrease especial effects and arbitrary noise
+T012.2,T012,05_batch,rational,24,12,6,"audit (rank 6, ranks 6-10)",0.2177,incorrect,,supress drift,Remove baseline wander
+T012.3,T012,05_batch,rational,9,12,5,pool (rank 5),0.2425,incorrect,,supress drift,Retain data for further processing
+T012.4,T012,05_batch,rational,14,12,1,pool (rank 1),0.5653,incorrect,combined two rationales in one node (50% correct),supress drift,Remove baseline wander and suppress drift
+T012.5,T012,05_batch,rational,1,12,4,pool (rank 4),0.2463,incorrect,,supress drift,Remove ECG artifacts
+T012.6,T012,05_batch,rational,6,12,2,pool (rank 2),0.3003,incorrect,,supress drift,Smooth ECG
+T013.1,T013,05_batch,rational,16,2,5,pool (rank 5),0.3411,incorrect,,delete muscle noise,Determine beat-level high-frequency noise
+T013.2,T013,05_batch,rational,6,2,9,"audit (rank 9, ranks 6-10)",0.2733,incorrect,,delete muscle noise,Smooth ECG
+T013.3,T013,05_batch,rational,3,2,1,pool (rank 1),0.5532,incorrect,,delete muscle noise,Remove muscle noise and frequency contaminants
+T013.4,T013,05_batch,rational,8,2,3,pool (rank 3),0.3776,incorrect,,delete muscle noise,Remove high-frequency noise and power line interference
+T013.5,T013,05_batch,rational,30,2,2,pool (rank 2),0.3853,incorrect,,delete muscle noise,Decrease especial effects and arbitrary noise
+T013.6,T013,05_batch,rational,1,2,4,pool (rank 4),0.3551,incorrect,,delete muscle noise,Remove ECG artifacts
+T014.1,T014,02_batch,operation,25,9,3,pool (rank 3),0.5761,incorrect,,principal component analysis,Spectral analysis of atrial activity
+T014.2,T014,02_batch,operation,23,9,5,pool (rank 5),0.5325,incorrect,,principal component analysis,Consecutive f-wave interval features
+T014.3,T014,02_batch,operation,10,9,2,pool (rank 2),0.8174,incorrect,,principal component analysis,Independent component analysis
+T014.4,T014,02_batch,operation,11,9,1,pool (rank 1),1,correct,,principal component analysis,Principal component analysis
+T014.5,T014,02_batch,operation,15,9,4,pool (rank 4),0.5331,incorrect,,principal component analysis,Neural-network QRS detection
+T015.1,T015,04_batch,operation,18,19,1,pool (rank 1),0.5605,incorrect,,estimate isoelectric levels from PR intervals,Cubic-spline baseline estimation
+T015.2,T015,04_batch,operation,4,19,3,pool (rank 3),0.5137,incorrect,,estimate isoelectric levels from PR intervals,ECG denoising and preprocessing
+T015.3,T015,04_batch,operation,54,19,5,pool (rank 5),0.4827,incorrect,,estimate isoelectric levels from PR intervals,Baseline drift synthesis
+T015.4,T015,04_batch,operation,22,19,4,pool (rank 4),0.5018,incorrect,,estimate isoelectric levels from PR intervals,Wavelet-based Wiener filtering
+T015.5,T015,04_batch,operation,15,19,2,pool (rank 2),0.5221,incorrect,,estimate isoelectric levels from PR intervals,Wavelet coefficient thresholding
+T016.1,T016,02_batch,rational,17,16,4,pool (rank 4),0.0891,incorrect,,isolate f-wave,Better detection accuracy and computational cost
+T016.2,T016,02_batch,rational,19,16,3,pool (rank 3),0.1446,incorrect,,isolate f-wave,Reported robustness to noise and QRS variations
+T016.3,T016,02_batch,rational,2,16,1,pool (rank 1),0.2339,correct,,isolate f-wave,Isolated atrial activity for feature extraction
+T016.4,T016,02_batch,rational,1,16,5,pool (rank 5),0.0864,incorrect,,isolate f-wave,Atrial and ventricular activity distinction
+T016.5,T016,02_batch,rational,12,16,2,pool (rank 2),0.1566,incorrect,,isolate f-wave,QRS detection for most cancellation methods
+T017.1,T017,02_batch,rational,1,10,5,pool (rank 5),0.1892,incorrect,,detection of QRS complex,Atrial and ventricular activity distinction
+T017.2,T017,02_batch,rational,12,10,1,pool (rank 1),0.5202,correct,,detection of QRS complex,QRS detection for most cancellation methods
+T017.3,T017,02_batch,rational,19,10,2,pool (rank 2),0.3809,incorrect,,detection of QRS complex,Reported robustness to noise and QRS variations
+T017.4,T017,02_batch,rational,17,10,3,pool (rank 3),0.3256,incorrect,,detection of QRS complex,Better detection accuracy and computational cost
+T017.5,T017,02_batch,rational,2,10,4,pool (rank 4),0.2656,incorrect,,detection of QRS complex,Isolated atrial activity for feature extraction
+T018.1,T018,04_batch,rational,5,7,1,pool (rank 1),0.8947,correct,,ECG enhancement,ECG enhancement
+T018.2,T018,04_batch,rational,28,7,2,pool (rank 2),0.5259,incorrect,,ECG enhancement,Improve ECG quality
+T018.3,T018,04_batch,rational,3,7,4,pool (rank 4),0.3625,incorrect,,ECG enhancement,Impaired ECG interpretation
+T018.4,T018,04_batch,rational,30,7,5,pool (rank 5),0.3228,incorrect,,ECG enhancement,Symlet resemblance to ECG
+T018.5,T018,04_batch,rational,1,7,3,pool (rank 3),0.3715,incorrect,,ECG enhancement,ECG noise contamination
+T019.1,T019,04_batch,operation,14,23,2,pool (rank 2),0.7013,incorrect,,wavelet based Wiener filtering techniques,Wavelet-transform denoising
+T019.2,T019,04_batch,operation,15,23,4,pool (rank 4),0.6748,incorrect,,wavelet based Wiener filtering techniques,Wavelet coefficient thresholding
+T019.3,T019,04_batch,operation,22,23,1,pool (rank 1),0.9884,correct,,wavelet based Wiener filtering techniques,Wavelet-based Wiener filtering
+T019.4,T019,04_batch,operation,20,23,3,pool (rank 3),0.6806,incorrect,,wavelet based Wiener filtering techniques,Linear filtering
+T019.5,T019,04_batch,operation,6,23,5,pool (rank 5),0.6638,incorrect,,wavelet based Wiener filtering techniques,Adaptive filtering
+T019.6,T019,04_batch,operation,10,23,8,"audit (rank 8, ranks 6-10)",0.5927,incorrect,,wavelet based Wiener filtering techniques,Bandpass filtering
+T020.1,T020,01_batch,rational,16,22,1,pool (rank 1),0.7961,correct,,less sensitive to measurement errors,Reduced sensitivity to measurement errors
+T020.2,T020,01_batch,rational,25,22,4,pool (rank 4),0.3126,incorrect,,less sensitive to measurement errors,Statistical robustness of RMSSD
+T020.3,T020,01_batch,rational,22,22,5,pool (rank 5),0.3025,incorrect,,less sensitive to measurement errors,Better statistical properties of RMSSD
+T020.4,T020,01_batch,rational,31,22,2,pool (rank 2),0.7224,incorrect,,less sensitive to measurement errors,Lower measurement-error sensitivity of geometric methods
+T020.5,T020,01_batch,rational,4,22,3,pool (rank 3),0.323,incorrect,,less sensitive to measurement errors,Potentially higher accuracy with longer recordings
+T021.1,T021,03_batch,rational,4,5,4,pool (rank 4),0.4377,incorrect,,suppress EMG noise,Difficulty avoiding EMG contamination
+T021.2,T021,03_batch,rational,8,5,2,pool (rank 2),0.5425,incorrect,,suppress EMG noise,Difficulty removing EMG artifacts
+T021.3,T021,03_batch,rational,6,5,3,pool (rank 3),0.5261,incorrect,,suppress EMG noise,Increased likelihood of EMG noise
+T021.4,T021,03_batch,rational,7,5,5,pool (rank 5),0.4376,incorrect,,suppress EMG noise,Random nature of EMG artifacts
+T021.5,T021,03_batch,rational,9,5,1,pool (rank 1),0.8807,correct,,suppress EMG noise,Suppress or remove EMG artifacts
+T022.1,T022,05_batch,rational,10,27,4,pool (rank 4),0.433,incorrect,,remove the ECG isoelectric line,Remove DC offset
+T022.2,T022,05_batch,rational,27,27,1,pool (rank 1),0.9967,correct,,remove the ECG isoelectric line,Remove ECG isoelectric line
+T022.3,T022,05_batch,rational,1,27,2,pool (rank 2),0.4887,incorrect,,remove the ECG isoelectric line,Remove ECG artifacts
+T022.4,T022,05_batch,rational,22,27,5,pool (rank 5),0.3569,incorrect,,remove the ECG isoelectric line,Remove power line interference and suppress DC
+T022.5,T022,05_batch,rational,6,27,3,pool (rank 3),0.4644,incorrect,,remove the ECG isoelectric line,Smooth ECG
+T023.1,T023,04_batch,operation,48,28,3,pool (rank 3),0.301,incorrect,,S-median,SNR improvement
+T023.2,T023,04_batch,operation,24,28,1,pool (rank 1),0.4834,correct,,S-median,S-median threshold selection
+T023.3,T023,04_batch,operation,49,28,12,"audit (rank 12, beyond rank 10)",0.2423,incorrect,,S-median,Frequency-domain analysis
+T023.4,T023,04_batch,operation,27,28,2,pool (rank 2),0.4401,incorrect,,S-median,Modified S-median thresholding
+T023.5,T023,04_batch,operation,18,28,5,pool (rank 5),0.2731,incorrect,,S-median,Cubic-spline baseline estimation
+T023.6,T023,04_batch,operation,54,28,4,pool (rank 4),0.2761,incorrect,,S-median,Baseline drift synthesis
+T024.1,T024,04_batch,operation,48,36,2,pool (rank 2),0.5389,incorrect,,add real electrode noise from MIT-BIH noise stress database,SNR improvement
+T024.2,T024,04_batch,operation,15,36,5,pool (rank 5),0.503,incorrect,,add real electrode noise from MIT-BIH noise stress database,Wavelet coefficient thresholding
+T024.3,T024,04_batch,operation,46,36,3,pool (rank 3),0.5363,incorrect,,add real electrode noise from MIT-BIH noise stress database,Normalized mean square error
+T024.4,T024,04_batch,operation,4,36,1,pool (rank 1),0.5538,incorrect,,add real electrode noise from MIT-BIH noise stress database,ECG denoising and preprocessing
+T024.5,T024,04_batch,operation,9,36,4,pool (rank 4),0.5058,incorrect,,add real electrode noise from MIT-BIH noise stress database,Neural network denoising
+T024.6,T024,04_batch,operation,18,36,8,"audit (rank 8, ranks 6-10)",0.4837,incorrect,,add real electrode noise from MIT-BIH noise stress database,Cubic-spline baseline estimation
+T025.1,T025,03_batch,operation,19,7,5,pool (rank 5),0.487,incorrect,,least-mean-square (LMS) adaptive filter,Threshold-based wavelet transformation
+T025.2,T025,03_batch,operation,12,7,2,pool (rank 2),0.7035,incorrect,,least-mean-square (LMS) adaptive filter,Adaptive filtering
+T025.3,T025,03_batch,operation,13,7,1,pool (rank 1),0.7708,correct,,least-mean-square (LMS) adaptive filter,Least-mean-square filtering
+T025.4,T025,03_batch,operation,11,7,4,pool (rank 4),0.6025,incorrect,,least-mean-square (LMS) adaptive filter,Low-pass filtering
+T025.5,T025,03_batch,operation,14,7,3,pool (rank 3),0.6963,incorrect,,least-mean-square (LMS) adaptive filter,Recursive least-squares filtering
+T026.1,T026,05_batch,rational,8,33,2,pool (rank 2),0.4988,incorrect,,determine the level of high-frequency noise that is available in any beat,Remove high-frequency noise and power line interference
+T026.2,T026,05_batch,rational,16,33,1,pool (rank 1),0.9807,correct,,determine the level of high-frequency noise that is available in any beat,Determine beat-level high-frequency noise
+T026.3,T026,05_batch,rational,18,33,4,pool (rank 4),0.4336,incorrect,,determine the level of high-frequency noise that is available in any beat,Selective frequency attenuation
+T026.4,T026,05_batch,rational,3,33,3,pool (rank 3),0.4436,incorrect,,determine the level of high-frequency noise that is available in any beat,Remove muscle noise and frequency contaminants
+T026.5,T026,05_batch,rational,30,33,5,pool (rank 5),0.4032,incorrect,,determine the level of high-frequency noise that is available in any beat,Decrease especial effects and arbitrary noise
+T027.1,T027,05_batch,rational,24,3,1,pool (rank 1),0.6752,correct,,delete baseline wander,Remove baseline wander
+T027.2,T027,05_batch,rational,14,3,2,pool (rank 2),0.6313,incorrect,,delete baseline wander,Remove baseline wander and suppress drift
+T027.3,T027,05_batch,rational,8,3,4,pool (rank 4),0.301,incorrect,,delete baseline wander,Remove high-frequency noise and power line interference
+T027.4,T027,05_batch,rational,10,3,5,pool (rank 5),0.2941,incorrect,,delete baseline wander,Remove DC offset
+T027.5,T027,05_batch,rational,1,3,3,pool (rank 3),0.3104,incorrect,,delete baseline wander,Remove ECG artifacts
+T028.1,T028,04_batch,rational,30,4,1,pool (rank 1),0.4061,incorrect,,telemedical applications involving transmission and storage of ECG,Symlet resemblance to ECG
+T028.2,T028,04_batch,rational,28,4,2,pool (rank 2),0.3991,incorrect,,telemedical applications involving transmission and storage of ECG,Improve ECG quality
+T028.3,T028,04_batch,rational,3,4,5,pool (rank 5),0.3022,incorrect,,telemedical applications involving transmission and storage of ECG,Impaired ECG interpretation
+T028.4,T028,04_batch,rational,5,4,4,pool (rank 4),0.3674,incorrect,,telemedical applications involving transmission and storage of ECG,ECG enhancement
+T028.5,T028,04_batch,rational,1,4,3,pool (rank 3),0.3822,incorrect,,telemedical applications involving transmission and storage of ECG,ECG noise contamination
+T029.1,T029,02_batch,operation,3,5,3,pool (rank 3),0.7309,incorrect,,spatiotemporal QRS cancellation,QRS cancellation
+T029.2,T029,02_batch,operation,13,5,4,pool (rank 4),0.6681,incorrect,,spatiotemporal QRS cancellation,QRS detection
+T029.3,T029,02_batch,operation,8,5,1,pool (rank 1),1,correct,,spatiotemporal QRS cancellation,Spatiotemporal QRS cancellation
+T029.4,T029,02_batch,operation,18,5,2,pool (rank 2),0.736,incorrect,,spatiotemporal QRS cancellation,Neural-network QRS cancellation
+T029.5,T029,02_batch,operation,4,5,5,pool (rank 5),0.664,incorrect,,spatiotemporal QRS cancellation,Direct QRS suppression
+T030.1,T030,02_batch,operation,9,14,1,pool (rank 1),1,correct,,blind source separation,Blind source separation
+T030.2,T030,02_batch,operation,18,14,5,pool (rank 5),0.5283,incorrect,,blind source separation,Neural-network QRS cancellation
+T030.3,T030,02_batch,operation,4,14,3,pool (rank 3),0.572,incorrect,,blind source separation,Direct QRS suppression
+T030.4,T030,02_batch,operation,10,14,2,pool (rank 2),0.611,incorrect,,blind source separation,Independent component analysis
+T030.5,T030,02_batch,operation,8,14,4,pool (rank 4),0.5445,incorrect,,blind source separation,Spatiotemporal QRS cancellation
+T030.6,T030,02_batch,operation,13,14,9,"audit (rank 9, ranks 6-10)",0.5078,incorrect,,blind source separation,QRS detection
+T031.1,T031,01_batch,rational,24,25,5,pool (rank 5),0.4807,incorrect,,estimate HR short-term components,Estimate vagally mediated HR fluctuations
+T031.2,T031,01_batch,rational,21,25,3,pool (rank 3),0.6264,incorrect,,estimate HR short-term components,Short-term HR variations
+T031.3,T031,01_batch,rational,8,25,2,pool (rank 2),0.7296,incorrect,,estimate HR short-term components,Estimate long-term HRV components
+T031.4,T031,01_batch,rational,9,25,1,pool (rank 1),0.8204,correct,,estimate HR short-term components,Estimate short-term HR components
+T031.5,T031,01_batch,rational,3,25,4,pool (rank 4),0.555,incorrect,,estimate HR short-term components,Short- and long-term HR variation
+T032.1,T032,05_batch,rational,8,31,1,pool (rank 1),0.5671,incorrect,,remove the high-frequency component,Remove high-frequency noise and power line interference
+T032.2,T032,05_batch,rational,22,31,5,pool (rank 5),0.4219,incorrect,,remove the high-frequency component,Remove power line interference and suppress DC
+T032.3,T032,05_batch,rational,25,31,3,pool (rank 3),0.4361,incorrect,,remove the high-frequency component,Remove P and T waves
+T032.4,T032,05_batch,rational,16,31,4,pool (rank 4),0.43,incorrect,,remove the high-frequency component,Determine beat-level high-frequency noise
+T032.5,T032,05_batch,rational,18,31,2,pool (rank 2),0.4378,incorrect,,remove the high-frequency component,Selective frequency attenuation
+T033.1,T033,04_batch,operation,21,26,3,pool (rank 3),0.6189,incorrect,,Inverse Discrete Wavelet Transform (IDWT) reconstruction,Wavelet packets
+T033.2,T033,04_batch,operation,16,26,1,pool (rank 1),0.96,correct,,Inverse Discrete Wavelet Transform (IDWT) reconstruction,Inverse discrete wavelet reconstruction
+T033.3,T033,04_batch,operation,14,26,2,pool (rank 2),0.7033,incorrect,,Inverse Discrete Wavelet Transform (IDWT) reconstruction,Wavelet-transform denoising
+T033.4,T033,04_batch,operation,15,26,5,pool (rank 5),0.5975,incorrect,,Inverse Discrete Wavelet Transform (IDWT) reconstruction,Wavelet coefficient thresholding
+T033.5,T033,04_batch,operation,35,26,4,pool (rank 4),0.6053,incorrect,,Inverse Discrete Wavelet Transform (IDWT) reconstruction,Continuous wavelet transform
+T034.1,T034,03_batch,rational,4,2,11,"audit (rank 11, beyond rank 10)",0.253,incorrect,,preserving ECG geometrical properties,Difficulty avoiding EMG contamination
+T034.2,T034,03_batch,rational,20,2,1,pool (rank 1),0.8732,correct,,preserving ECG geometrical properties,Retain original ECG geometry
+T034.3,T034,03_batch,rational,1,2,3,pool (rank 3),0.3343,incorrect,,preserving ECG geometrical properties,Low ECG signal-to-noise ratio
+T034.4,T034,03_batch,rational,2,2,2,pool (rank 2),0.3947,incorrect,,preserving ECG geometrical properties,ECG noise contamination
+T034.5,T034,03_batch,rational,15,2,4,pool (rank 4),0.3244,incorrect,,preserving ECG geometrical properties,"Reduced Q, R and S wave sharpness"
+T034.6,T034,03_batch,rational,3,2,5,pool (rank 5),0.3226,incorrect,,preserving ECG geometrical properties,ECG and EMG spectral overlap
+T035.1,T035,05_batch,operation,23,24,2,pool (rank 2),0.5186,correct,,two median filters,Paired median filtering
+T035.2,T035,05_batch,operation,17,24,4,pool (rank 4),0.4224,incorrect,,two median filters,Notch filtering
+T035.3,T035,05_batch,operation,28,24,1,pool (rank 1),0.6702,correct,,two median filters,Median filtering
+T035.4,T035,05_batch,operation,31,24,5,pool (rank 5),0.3595,correct,,two median filters,Two-step median filtering
+T035.5,T035,05_batch,operation,29,24,3,pool (rank 3),0.4885,incorrect,,two median filters,Local median filtering
+T036.1,T036,01_batch,operation,6,13,4,pool (rank 4),0.5382,incorrect,,SDSD,SDANN
+T036.2,T036,01_batch,operation,13,13,5,pool (rank 5),0.4768,incorrect,,SDSD,Median absolute deviation
+T036.3,T036,01_batch,operation,18,13,1,pool (rank 1),0.9881,correct,,SDSD,SDSD
+T036.4,T036,01_batch,operation,19,13,2,pool (rank 2),0.7414,incorrect,,SDSD,RMSSD
+T036.5,T036,01_batch,operation,1,13,3,pool (rank 3),0.5786,incorrect,,SDSD,SDNN
+T037.1,T037,02_batch,operation,20,7,3,pool (rank 3),0.6694,incorrect,,neural networks for QRS detection,Detected QRS subtraction
+T037.2,T037,02_batch,operation,18,7,5,pool (rank 5),0.6161,incorrect,,neural networks for QRS detection,Neural-network QRS cancellation
+T037.3,T037,02_batch,operation,14,7,4,pool (rank 4),0.6683,incorrect,,neural networks for QRS detection,Wavelet-based QRS detection
+T037.4,T037,02_batch,operation,15,7,2,pool (rank 2),0.7313,correct,,neural networks for QRS detection,Neural-network QRS detection
+T037.5,T037,02_batch,operation,8,7,8,"audit (rank 8, ranks 6-10)",0.5875,incorrect,,neural networks for QRS detection,Spatiotemporal QRS cancellation
+T037.6,T037,02_batch,operation,13,7,1,pool (rank 1),0.7356,incorrect,,neural networks for QRS detection,QRS detection
+T038.1,T038,02_batch,operation,3,11,2,pool (rank 2),0.6791,incorrect,,QRS substraction from ECG,QRS cancellation
+T038.2,T038,02_batch,operation,20,11,1,pool (rank 1),0.8143,correct,,QRS substraction from ECG,Detected QRS subtraction
+T038.3,T038,02_batch,operation,13,11,3,pool (rank 3),0.6642,incorrect,,QRS substraction from ECG,QRS detection
+T038.4,T038,02_batch,operation,4,11,5,pool (rank 5),0.627,incorrect,,QRS substraction from ECG,Direct QRS suppression
+T038.5,T038,02_batch,operation,14,11,4,pool (rank 4),0.6361,incorrect,,QRS substraction from ECG,Wavelet-based QRS detection
+T039.1,T039,05_batch,rational,3,8,3,pool (rank 3),0.5091,incorrect,,delete high-frequency noise,Remove muscle noise and frequency contaminants
+T039.2,T039,05_batch,rational,8,8,1,pool (rank 1),0.6774,incorrect,,delete high-frequency noise,Remove high-frequency noise and power line interference
+T039.3,T039,05_batch,rational,16,8,2,pool (rank 2),0.5717,incorrect,,delete high-frequency noise,Determine beat-level high-frequency noise
+T039.4,T039,05_batch,rational,18,8,5,pool (rank 5),0.3958,incorrect,,delete high-frequency noise,Selective frequency attenuation
+T039.5,T039,05_batch,rational,30,8,4,pool (rank 4),0.4387,incorrect,,delete high-frequency noise,Decrease especial effects and arbitrary noise
+T040.1,T040,04_batch,rational,31,3,3,pool (rank 3),0.3087,incorrect,,poor channel conditions,Better correlation and denoising
+T040.2,T040,04_batch,rational,25,3,4,pool (rank 4),0.2623,incorrect,,poor channel conditions,Optimal tuning factor desired
+T040.3,T040,04_batch,rational,52,3,21,"audit (rank 21, beyond rank 10)",0.1674,incorrect,,poor channel conditions,Loss of electrode-skin contact
+T040.4,T040,04_batch,rational,28,3,5,pool (rank 5),0.2613,incorrect,,poor channel conditions,Improve ECG quality
+T040.5,T040,04_batch,rational,2,3,1,pool (rank 1),0.7903,correct,,poor channel conditions,Poor transmission channel conditions
+T040.6,T040,04_batch,rational,36,3,2,pool (rank 2),0.3205,incorrect,,poor channel conditions,CWT redundancy
+T041.1,T041,01_batch,operation,1,8,5,pool (rank 5),0.4891,incorrect,,Coefficient of Variation of NN (CV),SDNN
+T041.2,T041,01_batch,operation,28,8,3,pool (rank 3),0.5503,incorrect,,Coefficient of Variation of NN (CV),Triangular interpolation of NN histogram
+T041.3,T041,01_batch,operation,11,8,1,pool (rank 1),0.9463,correct,,Coefficient of Variation of NN (CV),Coefficient of variation of NN
+T041.4,T041,01_batch,operation,29,8,4,pool (rank 4),0.533,incorrect,,Coefficient of Variation of NN (CV),NN scatter-plot geometric indices
+T041.5,T041,01_batch,operation,17,8,2,pool (rank 2),0.6044,incorrect,,Coefficient of Variation of NN (CV),Successive NN differences
+T042.1,T042,03_batch,operation,11,1,3,pool (rank 3),0.5644,incorrect,,dynamic approximation filter,Low-pass filtering
+T042.2,T042,03_batch,operation,12,1,2,pool (rank 2),0.5832,incorrect,,dynamic approximation filter,Adaptive filtering
+T042.3,T042,03_batch,operation,13,1,5,pool (rank 5),0.5353,incorrect,,dynamic approximation filter,Least-mean-square filtering
+T042.4,T042,03_batch,operation,14,1,4,pool (rank 4),0.546,incorrect,,dynamic approximation filter,Recursive least-squares filtering
+T042.5,T042,03_batch,operation,18,1,1,pool (rank 1),0.9765,correct,,dynamic approximation filter,Dynamic approximation filtering
+T043.1,T043,04_batch,rational,42,41,1,pool (rank 1),0.4802,correct,,Spectral-information preservation,Symlet symmetry and spectral preservation
+T043.2,T043,04_batch,rational,36,41,4,pool (rank 4),0.2824,incorrect,,Spectral-information preservation,CWT redundancy
+T043.3,T043,04_batch,rational,31,41,2,pool (rank 2),0.3898,incorrect,,Spectral-information preservation,Better correlation and denoising
+T043.4,T043,04_batch,rational,40,41,3,pool (rank 3),0.2976,incorrect,,Spectral-information preservation,More symmetric Daubechies filter
+T043.5,T043,04_batch,rational,43,41,5,pool (rank 5),0.2743,incorrect,,Spectral-information preservation,Denoising evaluation
+T044.1,T044,03_batch,rational,4,10,3,pool (rank 3),0.5366,incorrect,,EMG contamination of ECG,Difficulty avoiding EMG contamination
+T044.2,T044,03_batch,rational,9,10,2,pool (rank 2),0.5531,incorrect,,EMG contamination of ECG,Suppress or remove EMG artifacts
+T044.3,T044,03_batch,rational,2,10,1,pool (rank 1),0.5572,incorrect,,EMG contamination of ECG,ECG noise contamination
+T044.4,T044,03_batch,rational,7,10,4,pool (rank 4),0.4584,incorrect,,EMG contamination of ECG,Random nature of EMG artifacts
+T044.5,T044,03_batch,rational,20,10,5,pool (rank 5),0.4545,incorrect,,EMG contamination of ECG,Retain original ECG geometry
+T045.1,T045,05_batch,rational,8,6,5,pool (rank 5),0.228,incorrect,,address antialiasing,Remove high-frequency noise and power line interference
+T045.2,T045,05_batch,rational,30,6,2,pool (rank 2),0.2689,incorrect,,address antialiasing,Decrease especial effects and arbitrary noise
+T045.3,T045,05_batch,rational,4,6,1,pool (rank 1),0.6389,incorrect,,address antialiasing,Limit ADC saturation and address antialiasing
+T045.4,T045,05_batch,rational,1,6,3,pool (rank 3),0.238,incorrect,,address antialiasing,Remove ECG artifacts
+T045.5,T045,05_batch,rational,25,6,4,pool (rank 4),0.2341,incorrect,,address antialiasing,Remove P and T waves
+T046.1,T046,01_batch,operation,28,21,2,pool (rank 2),0.6057,incorrect,,HRV Triangular Index (HTI),Triangular interpolation of NN histogram
+T046.2,T046,01_batch,operation,27,21,1,pool (rank 1),0.9413,correct,,HRV Triangular Index (HTI),HRV triangular index
+T046.3,T046,01_batch,operation,29,21,3,pool (rank 3),0.5523,incorrect,,HRV Triangular Index (HTI),NN scatter-plot geometric indices
+T046.4,T046,01_batch,operation,14,21,4,pool (rank 4),0.5053,incorrect,,HRV Triangular Index (HTI),Interquartile range
+T046.5,T046,01_batch,operation,19,21,5,pool (rank 5),0.4855,incorrect,,HRV Triangular Index (HTI),RMSSD
+T047.1,T047,01_batch,operation,27,24,5,pool (rank 5),0.4724,incorrect,,Lorenz plot,HRV triangular index
+T047.2,T047,01_batch,operation,18,24,2,pool (rank 2),0.5163,incorrect,,Lorenz plot,SDSD
+T047.3,T047,01_batch,operation,19,24,6,"audit (rank 6, ranks 6-10)",0.4702,incorrect,,Lorenz plot,RMSSD
+T047.4,T047,01_batch,operation,29,24,1,pool (rank 1),0.7677,incorrect,,Lorenz plot,NN scatter-plot geometric indices
+T047.5,T047,01_batch,operation,17,24,4,pool (rank 4),0.4799,incorrect,,Lorenz plot,Successive NN differences
+T047.6,T047,01_batch,operation,14,24,3,pool (rank 3),0.483,incorrect,,Lorenz plot,Interquartile range
+T048.1,T048,04_batch,rational,25,39,1,pool (rank 1),0.8147,correct,,Choose the optimal b factor,Optimal tuning factor desired
+T048.2,T048,04_batch,rational,38,39,4,pool (rank 4),0.249,incorrect,,Choose the optimal b factor,Minimum-phase square-root choice
+T048.3,T048,04_batch,rational,12,39,5,pool (rank 5),0.2256,incorrect,,Choose the optimal b factor,Difficult performance control
+T048.4,T048,04_batch,rational,23,39,3,pool (rank 3),0.2711,incorrect,,Choose the optimal b factor,Threshold selection
+T048.5,T048,04_batch,rational,31,39,2,pool (rank 2),0.2931,incorrect,,Choose the optimal b factor,Better correlation and denoising
+T049.1,T049,04_batch,rational,2,42,4,pool (rank 4),0.233,incorrect,,Highly redundant CWT representation,Poor transmission channel conditions
+T049.2,T049,04_batch,rational,13,42,3,pool (rank 3),0.2547,incorrect,,Highly redundant CWT representation,Simplify and minimize hardware
+T049.3,T049,04_batch,rational,25,42,10,"audit (rank 10, ranks 6-10)",0.1885,incorrect,,Highly redundant CWT representation,Optimal tuning factor desired
+T049.4,T049,04_batch,rational,42,42,2,pool (rank 2),0.2811,incorrect,,Highly redundant CWT representation,Symlet symmetry and spectral preservation
+T049.5,T049,04_batch,rational,36,42,1,pool (rank 1),0.8709,correct,,Highly redundant CWT representation,CWT redundancy
+T049.6,T049,04_batch,rational,11,42,5,pool (rank 5),0.2256,incorrect,,Highly redundant CWT representation,Too many processing units
+T050.1,T050,05_batch,rational,14,30,5,pool (rank 5),0.3228,incorrect,,Decreases Special Effects and Arbitrary Noise,Remove baseline wander and suppress drift
+T050.2,T050,05_batch,rational,30,30,1,pool (rank 1),0.9207,correct,,Decreases Special Effects and Arbitrary Noise,Decrease especial effects and arbitrary noise
+T050.3,T050,05_batch,rational,3,30,3,pool (rank 3),0.3522,incorrect,,Decreases Special Effects and Arbitrary Noise,Remove muscle noise and frequency contaminants
+T050.4,T050,05_batch,rational,16,30,2,pool (rank 2),0.3926,incorrect,,Decreases Special Effects and Arbitrary Noise,Determine beat-level high-frequency noise
+T050.5,T050,05_batch,rational,8,30,4,pool (rank 4),0.335,incorrect,,Decreases Special Effects and Arbitrary Noise,Remove high-frequency noise and power line interference
+T051.1,T051,03_batch,rational,9,9,10,"audit (rank 10, ranks 6-10)",0.1697,incorrect,,exercise ECG or long-term wearable ECG,Suppress or remove EMG artifacts
+T051.2,T051,03_batch,rational,2,9,3,pool (rank 3),0.3982,incorrect,,exercise ECG or long-term wearable ECG,ECG noise contamination
+T051.3,T051,03_batch,rational,6,9,2,pool (rank 2),0.5229,incorrect,,exercise ECG or long-term wearable ECG,Increased likelihood of EMG noise
+T051.4,T051,03_batch,rational,1,9,5,pool (rank 5),0.3564,incorrect,,exercise ECG or long-term wearable ECG,Low ECG signal-to-noise ratio
+T051.5,T051,03_batch,rational,3,9,4,pool (rank 4),0.3801,incorrect,,exercise ECG or long-term wearable ECG,ECG and EMG spectral overlap
+T051.6,T051,03_batch,rational,5,9,1,pool (rank 1),0.6689,correct,,exercise ECG or long-term wearable ECG,Unavoidable muscle activity in exercise and long-term ECG
+T052.1,T052,02_batch,operation,9,6,3,pool (rank 3),0.611,incorrect,, independent component analysis,Blind source separation
+T052.2,T052,02_batch,operation,11,6,2,pool (rank 2),0.8174,incorrect,, independent component analysis,Principal component analysis
+T052.3,T052,02_batch,operation,14,6,5,pool (rank 5),0.5414,incorrect,, independent component analysis,Wavelet-based QRS detection
+T052.4,T052,02_batch,operation,10,6,1,pool (rank 1),1,correct,, independent component analysis,Independent component analysis
+T052.5,T052,02_batch,operation,26,6,4,pool (rank 4),0.5435,incorrect,, independent component analysis,Time-frequency analysis of atrial activity
+T053.1,T053,01_batch,rational,9,9,5,pool (rank 5),0.3887,incorrect,,compare groups (individuals or conditions) with different HR baselines,Estimate short-term HR components
+T053.2,T053,01_batch,rational,21,9,2,pool (rank 2),0.5165,incorrect,,compare groups (individuals or conditions) with different HR baselines,Short-term HR variations
+T053.3,T053,01_batch,rational,3,9,3,pool (rank 3),0.4567,incorrect,,compare groups (individuals or conditions) with different HR baselines,Short- and long-term HR variation
+T053.4,T053,01_batch,rational,12,9,1,pool (rank 1),0.8794,correct,,compare groups (individuals or conditions) with different HR baselines,Stable comparisons across HR baselines
+T053.5,T053,01_batch,rational,24,9,4,pool (rank 4),0.395,incorrect,,compare groups (individuals or conditions) with different HR baselines,Estimate vagally mediated HR fluctuations
+T054.1,T054,01_batch,rational,24,14,5,pool (rank 5),0.5242,incorrect,,capture short-term variations in HR,Estimate vagally mediated HR fluctuations
+T054.2,T054,01_batch,rational,9,14,3,pool (rank 3),0.5569,incorrect,,capture short-term variations in HR,Estimate short-term HR components
+T054.3,T054,01_batch,rational,3,14,2,pool (rank 2),0.5574,incorrect,,capture short-term variations in HR,Short- and long-term HR variation
+T054.4,T054,01_batch,rational,21,14,1,pool (rank 1),0.9011,correct,,capture short-term variations in HR,Short-term HR variations
+T054.5,T054,01_batch,rational,8,14,4,pool (rank 4),0.5371,incorrect,,capture short-term variations in HR,Estimate long-term HRV components
+T055.1,T055,02_batch,operation,20,3,3,pool (rank 3),0.5584,incorrect,,average beat subtraction (ABS),Detected QRS subtraction
+T055.2,T055,02_batch,operation,5,3,1,pool (rank 1),0.9668,correct,,average beat subtraction (ABS),Average beat subtraction
+T055.3,T055,02_batch,operation,26,3,5,pool (rank 5),0.5305,incorrect,,average beat subtraction (ABS),Time-frequency analysis of atrial activity
+T055.4,T055,02_batch,operation,14,3,2,pool (rank 2),0.5605,incorrect,,average beat subtraction (ABS),Wavelet-based QRS detection
+T055.5,T055,02_batch,operation,3,3,9,"audit (rank 9, ranks 6-10)",0.5035,incorrect,,average beat subtraction (ABS),QRS cancellation
+T055.6,T055,02_batch,operation,18,3,4,pool (rank 4),0.54,incorrect,,average beat subtraction (ABS),Neural-network QRS cancellation
+T056.1,T056,01_batch,rational,4,11,8,"audit (rank 8, ranks 6-10)",0.2172,incorrect,,Less sensitive to outliers and measurement errors,Potentially higher accuracy with longer recordings
+T056.2,T056,01_batch,rational,15,11,2,pool (rank 2),0.5482,correct,,Less sensitive to outliers and measurement errors,Reduced outlier influence
+T056.3,T056,01_batch,rational,16,11,1,pool (rank 1),0.6744,correct,,Less sensitive to outliers and measurement errors,Reduced sensitivity to measurement errors
+T056.4,T056,01_batch,rational,23,11,5,pool (rank 5),0.3433,incorrect,,Less sensitive to outliers and measurement errors,Greater PNS influence on RMSSD
+T056.5,T056,01_batch,rational,22,11,4,pool (rank 4),0.3656,incorrect,,Less sensitive to outliers and measurement errors,Better statistical properties of RMSSD
+T056.6,T056,01_batch,rational,31,11,3,pool (rank 3),0.4883,incorrect,,Less sensitive to outliers and measurement errors,Lower measurement-error sensitivity of geometric methods
+T057.1,T057,02_batch,operation,11,2,2,pool (rank 2),0.5361,incorrect,,Pan and Tompkins algorithm,Principal component analysis
+T057.2,T057,02_batch,operation,16,2,1,pool (rank 1),0.879,correct,,Pan and Tompkins algorithm,Pan and Tompkins QRS detection
+T057.3,T057,02_batch,operation,22,2,5,pool (rank 5),0.5012,incorrect,,Pan and Tompkins algorithm,F-wave amplitude features
+T057.4,T057,02_batch,operation,8,2,4,pool (rank 4),0.5063,incorrect,,Pan and Tompkins algorithm,Spatiotemporal QRS cancellation
+T057.5,T057,02_batch,operation,10,2,3,pool (rank 3),0.5149,incorrect,,Pan and Tompkins algorithm,Independent component analysis
+T058.1,T058,04_batch,operation,9,37,3,pool (rank 3),0.5312,incorrect,,add real motion artifacts from MIT-BIH noise stress database,Neural network denoising
+T058.2,T058,04_batch,operation,14,37,6,"audit (rank 6, ranks 6-10)",0.5109,incorrect,,add real motion artifacts from MIT-BIH noise stress database,Wavelet-transform denoising
+T058.3,T058,04_batch,operation,4,37,5,pool (rank 5),0.5122,incorrect,,add real motion artifacts from MIT-BIH noise stress database,ECG denoising and preprocessing
+T058.4,T058,04_batch,operation,18,37,1,pool (rank 1),0.5758,incorrect,,add real motion artifacts from MIT-BIH noise stress database,Cubic-spline baseline estimation
+T058.5,T058,04_batch,operation,6,37,2,pool (rank 2),0.5365,incorrect,,add real motion artifacts from MIT-BIH noise stress database,Adaptive filtering
+T058.6,T058,04_batch,operation,50,37,4,pool (rank 4),0.519,incorrect,,add real motion artifacts from MIT-BIH noise stress database,Time-frequency analysis
+T059.1,T059,01_batch,operation,14,23,3,pool (rank 3),0.6105,incorrect,,TTIN (Triangular interpolation of the NN interval histogram),Interquartile range
+T059.2,T059,01_batch,operation,27,23,2,pool (rank 2),0.6353,incorrect,,TTIN (Triangular interpolation of the NN interval histogram),HRV triangular index
+T059.3,T059,01_batch,operation,17,23,5,pool (rank 5),0.582,incorrect,,TTIN (Triangular interpolation of the NN interval histogram),Successive NN differences
+T059.4,T059,01_batch,operation,29,23,4,pool (rank 4),0.6077,incorrect,,TTIN (Triangular interpolation of the NN interval histogram),NN scatter-plot geometric indices
+T059.5,T059,01_batch,operation,28,23,1,pool (rank 1),0.9378,correct,,TTIN (Triangular interpolation of the NN interval histogram),Triangular interpolation of NN histogram
+T060.1,T060,04_batch,operation,27,40,4,pool (rank 4),0.1265,incorrect,,Add simulated coloured noise,Modified S-median thresholding
+T060.2,T060,04_batch,operation,33,40,3,pool (rank 3),0.1378,incorrect,,Add simulated coloured noise,Noise addition to ECG
+T060.3,T060,04_batch,operation,15,40,5,pool (rank 5),0.1222,incorrect,,Add simulated coloured noise,Wavelet coefficient thresholding
+T060.4,T060,04_batch,operation,32,40,1,pool (rank 1),0.3987,correct,,Add simulated coloured noise,White and colored noise simulation
+T060.5,T060,04_batch,operation,9,40,2,pool (rank 2),0.1433,incorrect,,Add simulated coloured noise,Neural network denoising
+T061.1,T061,05_batch,rational,25,26,1,pool (rank 1),0.8617,correct,,remove P and T waves,Remove P and T waves
+T061.2,T061,05_batch,rational,24,26,5,pool (rank 5),0.3542,incorrect,,remove P and T waves,Remove baseline wander
+T061.3,T061,05_batch,rational,22,26,4,pool (rank 4),0.3602,incorrect,,remove P and T waves,Remove power line interference and suppress DC
+T061.4,T061,05_batch,rational,10,26,2,pool (rank 2),0.3983,incorrect,,remove P and T waves,Remove DC offset
+T061.5,T061,05_batch,rational,27,26,3,pool (rank 3),0.386,incorrect,,remove P and T waves,Remove ECG isoelectric line
+T062.1,T062,04_batch,operation,8,11,1,pool (rank 1),1,correct,,independent component analysis,Independent component analysis
+T062.2,T062,04_batch,operation,22,11,5,pool (rank 5),0.5293,incorrect,,independent component analysis,Wavelet-based Wiener filtering
+T062.3,T062,04_batch,operation,7,11,2,pool (rank 2),0.8174,incorrect,,independent component analysis,Principal component analysis
+T062.4,T062,04_batch,operation,15,11,4,pool (rank 4),0.5414,incorrect,,independent component analysis,Wavelet coefficient thresholding
+T062.5,T062,04_batch,operation,6,11,3,pool (rank 3),0.5539,incorrect,,independent component analysis,Adaptive filtering
+T063.1,T063,05_batch,rational,10,22,5,pool (rank 5),0.3644,incorrect,,remove power line interference,Remove DC offset
+T063.2,T063,05_batch,rational,14,22,4,pool (rank 4),0.373,incorrect,,remove power line interference,Remove baseline wander and suppress drift
+T063.3,T063,05_batch,rational,8,22,2,pool (rank 2),0.7538,incorrect,,remove power line interference,Remove high-frequency noise and power line interference
+T063.4,T063,05_batch,rational,22,22,1,pool (rank 1),0.796,correct,,remove power line interference,Remove power line interference and suppress DC
+T063.5,T063,05_batch,rational,27,22,3,pool (rank 3),0.4502,incorrect,,remove power line interference,Remove ECG isoelectric line
+T064.1,T064,04_batch,rational,1,9,3,pool (rank 3),0.41,incorrect,,denoise ECG,ECG noise contamination
+T064.2,T064,04_batch,rational,3,9,4,pool (rank 4),0.3804,incorrect,,denoise ECG,Impaired ECG interpretation
+T064.3,T064,04_batch,rational,28,9,2,pool (rank 2),0.4171,incorrect,,denoise ECG,Improve ECG quality
+T064.4,T064,04_batch,rational,5,9,1,pool (rank 1),0.4799,incorrect,,denoise ECG,ECG enhancement
+T064.5,T064,04_batch,rational,43,9,5,pool (rank 5),0.3703,incorrect,,denoise ECG,Denoising evaluation
+T064.6,T064,04_batch,rational,55,9,10,"audit (rank 10, ranks 6-10)",0.2641,incorrect,,denoise ECG,Respiration-related baseline drift
+T065.1,T065,05_batch,rational,22,14,2,pool (rank 2),0.7144,incorrect,,delete power line interference,Remove power line interference and suppress DC
+T065.2,T065,05_batch,rational,27,14,3,pool (rank 3),0.3868,incorrect,,delete power line interference,Remove ECG isoelectric line
+T065.3,T065,05_batch,rational,24,14,4,pool (rank 4),0.3565,incorrect,,delete power line interference,Remove baseline wander
+T065.4,T065,05_batch,rational,25,14,5,pool (rank 5),0.3556,incorrect,,delete power line interference,Remove P and T waves
+T065.5,T065,05_batch,rational,8,14,1,pool (rank 1),0.7578,incorrect,,delete power line interference,Remove high-frequency noise and power line interference
+T066.1,T066,04_batch,operation,9,17,5,pool (rank 5),0.4227,incorrect,,cubic spline,Neural network denoising
+T066.2,T066,04_batch,operation,7,17,4,pool (rank 4),0.4404,incorrect,,cubic spline,Principal component analysis
+T066.3,T066,04_batch,operation,4,17,3,pool (rank 3),0.4468,incorrect,,cubic spline,ECG denoising and preprocessing
+T066.4,T066,04_batch,operation,18,17,1,pool (rank 1),0.7224,correct,,cubic spline,Cubic-spline baseline estimation
+T066.5,T066,04_batch,operation,20,17,2,pool (rank 2),0.4927,incorrect,,cubic spline,Linear filtering
+T067.1,T067,01_batch,rational,8,17,5,pool (rank 5),0.2395,incorrect,,estimate PNS activity,Estimate long-term HRV components
+T067.2,T067,01_batch,rational,23,17,1,pool (rank 1),0.5908,correct,,estimate PNS activity,Greater PNS influence on RMSSD
+T067.3,T067,01_batch,rational,24,17,3,pool (rank 3),0.3013,incorrect,,estimate PNS activity,Estimate vagally mediated HR fluctuations
+T067.4,T067,01_batch,rational,32,17,4,pool (rank 4),0.2431,incorrect,,estimate PNS activity,Many NN intervals required
+T067.5,T067,01_batch,rational,33,17,17,"audit (rank 17, beyond rank 10)",0.1406,incorrect,,estimate PNS activity,Recordings shorter than recommended 20 minutes
+T067.6,T067,01_batch,rational,15,17,2,pool (rank 2),0.3765,incorrect,,estimate PNS activity,Reduced outlier influence
+T068.1,T068,05_batch,operation,29,32,1,pool (rank 1),0.6534,incorrect,,low-pass filter,Local median filtering
+T068.2,T068,05_batch,operation,13,32,9,"audit (rank 9, ranks 6-10)",0.3793,incorrect,,low-pass filter,High-pass filtering for baseline drift
+T068.3,T068,05_batch,operation,12,32,3,pool (rank 3),0.6075,incorrect,,low-pass filter,High-pass filtering for DC offset
+T068.4,T068,05_batch,operation,15,32,4,pool (rank 4),0.598,incorrect,,low-pass filter,High-pass filtering for noise assessment
+T068.5,T068,05_batch,operation,5,32,2,pool (rank 2),0.6362,incorrect,,low-pass filter,Moving average filtering
+T068.6,T068,05_batch,operation,7,32,5,pool (rank 5),0.5933,incorrect,sould they be accepted?,low-pass filter,Low-pass filtering
+T069.1,T069,01_batch,operation,13,19,13,"audit (rank 13, beyond rank 10)",0.1171,incorrect,,pNN20,Median absolute deviation
+T069.2,T069,01_batch,operation,18,19,5,pool (rank 5),0.2616,incorrect,,pNN20,SDSD
+T069.3,T069,01_batch,operation,11,19,4,pool (rank 4),0.2723,incorrect,,pNN20,Coefficient of variation of NN
+T069.4,T069,01_batch,operation,20,19,1,pool (rank 1),0.716,correct,,pNN20,pNN threshold indices
+T069.5,T069,01_batch,operation,1,19,2,pool (rank 2),0.4333,incorrect,,pNN20,SDNN
+T069.6,T069,01_batch,operation,17,19,3,pool (rank 3),0.2814,incorrect,,pNN20,Successive NN differences
+T070.1,T070,04_batch,rational,28,16,4,pool (rank 4),0.224,incorrect,,estimate baseline wander,Improve ECG quality
+T070.2,T070,04_batch,rational,23,16,3,pool (rank 3),0.2279,incorrect,,estimate baseline wander,Threshold selection
+T070.3,T070,04_batch,rational,55,16,2,pool (rank 2),0.3341,incorrect,,estimate baseline wander,Respiration-related baseline drift
+T070.4,T070,04_batch,rational,31,16,5,pool (rank 5),0.2128,incorrect,,estimate baseline wander,Better correlation and denoising
+T070.5,T070,04_batch,rational,17,16,1,pool (rank 1),0.6258,incorrect,,estimate baseline wander,Baseline wander removal
+T071.1,T071,04_batch,rational,40,27,5,pool (rank 5),0.2454,incorrect,,choosing a threshold value,More symmetric Daubechies filter
+T071.2,T071,04_batch,rational,17,27,3,pool (rank 3),0.273,incorrect,,choosing a threshold value,Baseline wander removal
+T071.3,T071,04_batch,rational,23,27,1,pool (rank 1),0.8155,correct,,choosing a threshold value,Threshold selection
+T071.4,T071,04_batch,rational,38,27,2,pool (rank 2),0.2985,incorrect,,choosing a threshold value,Minimum-phase square-root choice
+T071.5,T071,04_batch,rational,25,27,4,pool (rank 4),0.2594,incorrect,,choosing a threshold value,Optimal tuning factor desired
+T072.1,T072,01_batch,rational,33,3,2,pool (rank 2),0.3212,incorrect,,longer periods (especially 24h),Recordings shorter than recommended 20 minutes
+T072.2,T072,01_batch,rational,8,3,5,pool (rank 5),0.2862,incorrect,,longer periods (especially 24h),Estimate long-term HRV components
+T072.3,T072,01_batch,rational,21,3,4,pool (rank 4),0.2885,incorrect,,longer periods (especially 24h),Short-term HR variations
+T072.4,T072,01_batch,rational,3,3,3,pool (rank 3),0.3128,incorrect,,longer periods (especially 24h),Short- and long-term HR variation
+T072.5,T072,01_batch,rational,4,3,1,pool (rank 1),0.5676,correct,,longer periods (especially 24h),Potentially higher accuracy with longer recordings
+T073.1,T073,04_batch,operation,4,18,4,pool (rank 4),0.5606,incorrect,,Linear interpolation between isoelectric levels,ECG denoising and preprocessing
+T073.2,T073,04_batch,operation,20,18,3,pool (rank 3),0.5677,incorrect,,Linear interpolation between isoelectric levels,Linear filtering
+T073.3,T073,04_batch,operation,18,18,2,pool (rank 2),0.5686,incorrect,,Linear interpolation between isoelectric levels,Cubic-spline baseline estimation
+T073.4,T073,04_batch,operation,19,18,1,pool (rank 1),0.6248,correct,I don’t like the extracted parameter,Linear interpolation between isoelectric levels,Linear-interpolation baseline construction
+T073.5,T073,04_batch,operation,22,18,5,pool (rank 5),0.5465,incorrect,,Linear interpolation between isoelectric levels,Wavelet-based Wiener filtering
+T074.1,T074,04_batch,rational,31,15,4,pool (rank 4),0.2576,incorrect,,remove baseline wander,Better correlation and denoising
+T074.2,T074,04_batch,rational,55,15,2,pool (rank 2),0.3088,incorrect,,remove baseline wander,Respiration-related baseline drift
+T074.3,T074,04_batch,rational,12,15,5,pool (rank 5),0.237,incorrect,,remove baseline wander,Difficult performance control
+T074.4,T074,04_batch,rational,17,15,1,pool (rank 1),0.9551,correct,,remove baseline wander,Baseline wander removal
+T074.5,T074,04_batch,rational,23,15,3,pool (rank 3),0.2822,incorrect,,remove baseline wander,Threshold selection
+T075.1,T075,05_batch,operation,5,10,3,pool (rank 3),0.6274,incorrect,,high-pass filter,Moving average filtering
+T075.2,T075,05_batch,operation,15,10,2,pool (rank 2),0.636,correct,[check] its rationale 'Determine beat-level high-frequency noise' = GT rationale 33 of this high-pass filter; kept correct,high-pass filter,High-pass filtering for noise assessment
+T075.3,T075,05_batch,operation,28,10,10,"audit (rank 10, ranks 6-10)",0.3475,incorrect,,high-pass filter,Median filtering
+T075.4,T075,05_batch,operation,17,10,5,pool (rank 5),0.551,incorrect,,high-pass filter,Notch filtering
+T075.5,T075,05_batch,operation,29,10,4,pool (rank 4),0.605,incorrect,,high-pass filter,Local median filtering
+T075.6,T075,05_batch,operation,12,10,1,pool (rank 1),0.6505,correct,"[check] its rationale 'Remove DC offset' = GT rationale 11 'remove the DC offset' (scores 0.667, just under the 0.67 threshold, so the algorithm did not align them); GT has ONE high-pass node with both rationales, the generation split it; kept correct",high-pass filter,High-pass filtering for DC offset
+T076.1,T076,04_batch,operation,18,30,25,"audit (rank 25, beyond rank 10)",0.1427,incorrect,,wavelet transform (WT),Cubic-spline baseline estimation
+T076.2,T076,04_batch,operation,29,30,1,pool (rank 1),0.6645,incorrect,,wavelet transform (WT),Symlet coefficient calculation
+T076.3,T076,04_batch,operation,14,30,5,pool (rank 5),0.4274,correct,,wavelet transform (WT),Wavelet-transform denoising
+T076.4,T076,04_batch,operation,35,30,2,pool (rank 2),0.5472,incorrect,,wavelet transform (WT),Continuous wavelet transform
+T076.5,T076,04_batch,operation,22,30,4,pool (rank 4),0.4515,incorrect,,wavelet transform (WT),Wavelet-based Wiener filtering
+T076.6,T076,04_batch,operation,15,30,3,pool (rank 3),0.4624,incorrect,,wavelet transform (WT),Wavelet coefficient thresholding
+T077.1,T077,05_batch,rational,20,20,1,pool (rank 1),0.9467,correct,,unusual ringing,Unusual ringing
+T077.2,T077,05_batch,rational,3,20,2,pool (rank 2),0.2535,incorrect,,unusual ringing,Remove muscle noise and frequency contaminants
+T077.3,T077,05_batch,rational,22,20,4,pool (rank 4),0.2281,incorrect,,unusual ringing,Remove power line interference and suppress DC
+T077.4,T077,05_batch,rational,8,20,3,pool (rank 3),0.2487,incorrect,,unusual ringing,Remove high-frequency noise and power line interference
+T077.5,T077,05_batch,rational,16,20,5,pool (rank 5),0.2028,incorrect,,unusual ringing,Determine beat-level high-frequency noise
+T078.1,T078,04_batch,operation,54,29,5,pool (rank 5),0.4663,incorrect,,Adaptive S-median,Baseline drift synthesis
+T078.2,T078,04_batch,operation,27,29,1,pool (rank 1),0.8726,correct,,Adaptive S-median,Modified S-median thresholding
+T078.3,T078,04_batch,operation,6,29,2,pool (rank 2),0.5249,incorrect,,Adaptive S-median,Adaptive filtering
+T078.4,T078,04_batch,operation,48,29,3,pool (rank 3),0.4942,incorrect,,Adaptive S-median,SNR improvement
+T078.5,T078,04_batch,operation,18,29,7,"audit (rank 7, ranks 6-10)",0.4535,incorrect,,Adaptive S-median,Cubic-spline baseline estimation
+T078.6,T078,04_batch,operation,14,29,4,pool (rank 4),0.4689,incorrect,,Adaptive S-median,Wavelet-transform denoising
+T079.1,T079,02_batch,operation,3,4,4,pool (rank 4),0.6758,incorrect,, direct suppression of QRS,QRS cancellation
+T079.2,T079,02_batch,operation,18,4,5,pool (rank 5),0.6554,incorrect,, direct suppression of QRS,Neural-network QRS cancellation
+T079.3,T079,02_batch,operation,13,4,2,pool (rank 2),0.7647,incorrect,, direct suppression of QRS,QRS detection
+T079.4,T079,02_batch,operation,8,4,3,pool (rank 3),0.6784,incorrect,, direct suppression of QRS,Spatiotemporal QRS cancellation
+T079.5,T079,02_batch,operation,4,4,1,pool (rank 1),0.9876,correct,, direct suppression of QRS,Direct QRS suppression
+T080.1,T080,04_batch,rational,43,31,3,pool (rank 3),0.4425,incorrect,,Denoise ECG with wavelet-based method,Denoising evaluation
+T080.2,T080,04_batch,rational,30,31,1,pool (rank 1),0.5101,incorrect,,Denoise ECG with wavelet-based method,Symlet resemblance to ECG
+T080.3,T080,04_batch,rational,28,31,2,pool (rank 2),0.464,incorrect,,Denoise ECG with wavelet-based method,Improve ECG quality
+T080.4,T080,04_batch,rational,5,31,5,pool (rank 5),0.4069,incorrect,,Denoise ECG with wavelet-based method,ECG enhancement
+T080.5,T080,04_batch,rational,1,31,4,pool (rank 4),0.4179,incorrect,,Denoise ECG with wavelet-based method,ECG noise contamination
+T081.1,T081,05_batch,operation,28,29,5,pool (rank 5),0.6613,incorrect,,Median Filter,Median filtering
+T081.2,T081,05_batch,operation,29,29,1,pool (rank 1),0.936,correct,,Median Filter,Local median filtering
+T081.3,T081,05_batch,operation,2,29,14,"audit (rank 14, beyond rank 10)",0.2287,incorrect,,Median Filter,Bandpass filtering
+T081.4,T081,05_batch,operation,31,29,2,pool (rank 2),0.7399,incorrect,,Median Filter,Two-step median filtering
+T081.5,T081,05_batch,operation,26,29,3,pool (rank 3),0.6963,incorrect,,Median Filter,Three-stage median filtering
+T081.6,T081,05_batch,operation,5,29,4,pool (rank 4),0.6874,incorrect,,Median Filter,Moving average filtering
+T082.1,T082,04_batch,operation,14,24,1,pool (rank 1),0.7997,correct,,wavelet transform (WT),Wavelet-transform denoising
+T082.2,T082,04_batch,operation,22,24,4,pool (rank 4),0.6436,incorrect,,wavelet transform (WT),Wavelet-based Wiener filtering
+T082.3,T082,04_batch,operation,35,24,2,pool (rank 2),0.6874,incorrect,,wavelet transform (WT),Continuous wavelet transform
+T082.4,T082,04_batch,operation,21,24,5,pool (rank 5),0.6247,incorrect,,wavelet transform (WT),Wavelet packets
+T082.5,T082,04_batch,operation,16,24,3,pool (rank 3),0.6444,incorrect,,wavelet transform (WT),Inverse discrete wavelet reconstruction
+T083.1,T083,04_batch,operation,20,8,2,pool (rank 2),0.6831,incorrect,,adaptive filter architecture,Linear filtering
+T083.2,T083,04_batch,operation,6,8,1,pool (rank 1),0.9534,correct,,adaptive filter architecture,Adaptive filtering
+T083.3,T083,04_batch,operation,10,8,4,pool (rank 4),0.5464,incorrect,,adaptive filter architecture,Bandpass filtering
+T083.4,T083,04_batch,operation,22,8,3,pool (rank 3),0.6382,incorrect,,adaptive filter architecture,Wavelet-based Wiener filtering
+T083.5,T083,04_batch,operation,14,8,5,pool (rank 5),0.5284,incorrect,,adaptive filter architecture,Wavelet-transform denoising
+T084.1,T084,05_batch,operation,15,1,4,pool (rank 4),0.2513,incorrect,,bandpass filtering,High-pass filtering for noise assessment
+T084.2,T084,05_batch,operation,17,1,3,pool (rank 3),0.2745,incorrect,,bandpass filtering,Notch filtering
+T084.3,T084,05_batch,operation,2,1,1,pool (rank 1),1,correct,,bandpass filtering,Bandpass filtering
+T084.4,T084,05_batch,operation,12,1,2,pool (rank 2),0.2775,incorrect,,bandpass filtering,High-pass filtering for DC offset
+T084.5,T084,05_batch,operation,7,1,5,pool (rank 5),0.2322,incorrect,,bandpass filtering,Low-pass filtering
+T085.1,T085,02_batch,rational,12,19,2,pool (rank 2),0.4437,incorrect,,Robustness to noise and QRS variations,QRS detection for most cancellation methods
+T085.2,T085,02_batch,rational,19,19,1,pool (rank 1),0.8383,correct,,Robustness to noise and QRS variations,Reported robustness to noise and QRS variations
+T085.3,T085,02_batch,rational,17,19,3,pool (rank 3),0.3066,incorrect,,Robustness to noise and QRS variations,Better detection accuracy and computational cost
+T085.4,T085,02_batch,rational,1,19,5,pool (rank 5),0.2017,incorrect,,Robustness to noise and QRS variations,Atrial and ventricular activity distinction
+T085.5,T085,02_batch,rational,2,19,4,pool (rank 4),0.2028,incorrect,,Robustness to noise and QRS variations,Isolated atrial activity for feature extraction
+T086.1,T086,01_batch,rational,24,7,3,pool (rank 3),0.5402,incorrect,,Assess HR variability within short intervals,Estimate vagally mediated HR fluctuations
+T086.2,T086,01_batch,rational,9,7,1,pool (rank 1),0.648,correct,"[check] connected to 'SDNN index' = SDNNI, the right operation",Assess HR variability within short intervals,Estimate short-term HR components
+T086.3,T086,01_batch,rational,21,7,2,pool (rank 2),0.6219,incorrect,"[check] connected to SDSD / RMSSD / pNN indices (= GT node 14 'capture short-term variations in HR'), not to SDNNI; kept incorrect as instructed",Assess HR variability within short intervals,Short-term HR variations
+T086.4,T086,01_batch,rational,3,7,5,pool (rank 5),0.5171,incorrect,,Assess HR variability within short intervals,Short- and long-term HR variation
+T086.5,T086,01_batch,rational,12,7,4,pool (rank 4),0.5186,incorrect,,Assess HR variability within short intervals,Stable comparisons across HR baselines
+T086.6,T086,01_batch,rational,26,7,12,"audit (rank 12, beyond rank 10)",0.2472,incorrect,,Assess HR variability within short intervals,Short-term time windows
+T087.1,T087,01_batch,rational,4,27,4,pool (rank 4),0.2274,incorrect,,small number of NNIs (< 20 min),Potentially higher accuracy with longer recordings
+T087.2,T087,01_batch,rational,33,27,2,pool (rank 2),0.465,correct,,small number of NNIs (< 20 min),Recordings shorter than recommended 20 minutes
+T087.3,T087,01_batch,rational,10,27,5,pool (rank 5),0.1928,incorrect,,small number of NNIs (< 20 min),Guideline recommendation for traditional indices
+T087.4,T087,01_batch,rational,22,27,3,pool (rank 3),0.2407,incorrect,,small number of NNIs (< 20 min),Better statistical properties of RMSSD
+T087.5,T087,01_batch,rational,32,27,1,pool (rank 1),0.4926,incorrect,,small number of NNIs (< 20 min),Many NN intervals required
+T088.1,T088,05_batch,operation,28,28,1,pool (rank 1),0.8734,incorrect,,three median filters,Median filtering
+T088.2,T088,05_batch,operation,12,28,5,pool (rank 5),0.4147,incorrect,,three median filters,High-pass filtering for DC offset
+T088.3,T088,05_batch,operation,17,28,4,pool (rank 4),0.4263,incorrect,,three median filters,Notch filtering
+T088.4,T088,05_batch,operation,26,28,3,pool (rank 3),0.4513,correct,,three median filters,Three-stage median filtering
+T088.5,T088,05_batch,operation,29,28,2,pool (rank 2),0.5275,incorrect,,three median filters,Local median filtering
+T089.1,T089,04_batch,rational,43,33,1,pool (rank 1),0.5578,incorrect,,evaluate performance of denoising technique on real noise,Denoising evaluation
+T089.2,T089,04_batch,rational,1,33,5,pool (rank 5),0.3163,incorrect,,evaluate performance of denoising technique on real noise,ECG noise contamination
+T089.3,T089,04_batch,rational,31,33,2,pool (rank 2),0.4299,incorrect,,evaluate performance of denoising technique on real noise,Better correlation and denoising
+T089.4,T089,04_batch,rational,34,33,3,pool (rank 3),0.4041,incorrect,,evaluate performance of denoising technique on real noise,Study multiple noise sources
+T089.5,T089,04_batch,rational,28,33,4,pool (rank 4),0.3176,incorrect,,evaluate performance of denoising technique on real noise,Improve ECG quality
+T090.1,T090,04_batch,operation,20,21,1,pool (rank 1),1,correct,,linear filtering,Linear filtering
+T090.2,T090,04_batch,operation,18,21,5,pool (rank 5),0.5757,incorrect,,linear filtering,Cubic-spline baseline estimation
+T090.3,T090,04_batch,operation,6,21,2,pool (rank 2),0.7127,incorrect,,linear filtering,Adaptive filtering
+T090.4,T090,04_batch,operation,9,21,4,pool (rank 4),0.6046,incorrect,,linear filtering,Neural network denoising
+T090.5,T090,04_batch,operation,22,21,3,pool (rank 3),0.6896,incorrect,,linear filtering,Wavelet-based Wiener filtering
+T091.1,T091,04_batch,operation,18,38,4,pool (rank 4),0.2731,incorrect,,S-median,Cubic-spline baseline estimation
+T091.2,T091,04_batch,operation,44,38,5,pool (rank 5),0.2697,incorrect,,S-median,Percent root mean square difference
+T091.3,T091,04_batch,operation,27,38,1,pool (rank 1),0.4878,incorrect,,S-median,Modified S-median thresholding
+T091.4,T091,04_batch,operation,24,38,2,pool (rank 2),0.3103,correct,,S-median,S-median threshold selection
+T091.5,T091,04_batch,operation,48,38,3,pool (rank 3),0.2799,incorrect,,S-median,SNR improvement
+T092.1,T092,03_batch,operation,14,6,4,pool (rank 4),0.5184,incorrect,,lowpass filter,Recursive least-squares filtering
+T092.2,T092,03_batch,operation,10,6,6,"audit (rank 6, ranks 6-10)",0.4828,incorrect,,lowpass filter,Discrete wavelet transformation
+T092.3,T092,03_batch,operation,19,6,5,pool (rank 5),0.5016,incorrect,,lowpass filter,Threshold-based wavelet transformation
+T092.4,T092,03_batch,operation,12,6,2,pool (rank 2),0.6433,incorrect,,lowpass filter,Adaptive filtering
+T092.5,T092,03_batch,operation,11,6,1,pool (rank 1),0.9204,correct,,lowpass filter,Low-pass filtering
+T092.6,T092,03_batch,operation,13,6,3,pool (rank 3),0.5599,incorrect,,lowpass filter,Least-mean-square filtering
+T093.1,T093,02_batch,rational,17,18,1,pool (rank 1),0.7935,correct,,Detection accuracy and computational cost advantages,Better detection accuracy and computational cost
+T093.2,T093,02_batch,rational,12,18,2,pool (rank 2),0.3826,incorrect,,Detection accuracy and computational cost advantages,QRS detection for most cancellation methods
+T093.3,T093,02_batch,rational,1,18,5,pool (rank 5),0.1355,incorrect,,Detection accuracy and computational cost advantages,Atrial and ventricular activity distinction
+T093.4,T093,02_batch,rational,19,18,3,pool (rank 3),0.2711,incorrect,,Detection accuracy and computational cost advantages,Reported robustness to noise and QRS variations
+T093.5,T093,02_batch,rational,2,18,4,pool (rank 4),0.2126,incorrect,,Detection accuracy and computational cost advantages,Isolated atrial activity for feature extraction
+T094.1,T094,04_batch,rational,30,1,3,pool (rank 3),0.4532,incorrect,,misjudgment and omission of ECG features,Symlet resemblance to ECG
+T094.2,T094,04_batch,rational,1,1,5,pool (rank 5),0.3513,incorrect,,misjudgment and omission of ECG features,ECG noise contamination
+T094.3,T094,04_batch,rational,5,1,4,pool (rank 4),0.4191,incorrect,,misjudgment and omission of ECG features,ECG enhancement
+T094.4,T094,04_batch,rational,28,1,2,pool (rank 2),0.4815,incorrect,,misjudgment and omission of ECG features,Improve ECG quality
+T094.5,T094,04_batch,rational,3,1,1,pool (rank 1),0.7275,correct,,misjudgment and omission of ECG features,Impaired ECG interpretation
+T095.1,T095,02_batch,rational,17,15,5,pool (rank 5),0.1446,incorrect,,capture atrial activity,Better detection accuracy and computational cost
+T095.2,T095,02_batch,rational,2,15,1,pool (rank 1),0.6206,correct,,capture atrial activity,Isolated atrial activity for feature extraction
+T095.3,T095,02_batch,rational,19,15,4,pool (rank 4),0.1718,incorrect,,capture atrial activity,Reported robustness to noise and QRS variations
+T095.4,T095,02_batch,rational,1,15,2,pool (rank 2),0.48,incorrect,,capture atrial activity,Atrial and ventricular activity distinction
+T095.5,T095,02_batch,rational,12,15,3,pool (rank 3),0.2122,incorrect,,capture atrial activity,QRS detection for most cancellation methods
+T096.1,T096,05_batch,rational,14,5,3,pool (rank 3),0.2459,incorrect,,limit ADC saturation,Remove baseline wander and suppress drift
+T096.2,T096,05_batch,rational,4,5,1,pool (rank 1),0.6963,correct,,limit ADC saturation,Limit ADC saturation and address antialiasing
+T096.3,T096,05_batch,rational,6,5,4,pool (rank 4),0.2455,incorrect,,limit ADC saturation,Smooth ECG
+T096.4,T096,05_batch,rational,30,5,2,pool (rank 2),0.2679,incorrect,,limit ADC saturation,Decrease especial effects and arbitrary noise
+T096.5,T096,05_batch,rational,18,5,5,pool (rank 5),0.2358,incorrect,,limit ADC saturation,Selective frequency attenuation
+T096.6,T096,05_batch,rational,25,5,10,"audit (rank 10, ranks 6-10)",0.1718,incorrect,,limit ADC saturation,Remove P and T waves
+T097.1,T097,01_batch,operation,18,1,2,pool (rank 2),0.6539,incorrect,,SDNN,SDSD
+T097.2,T097,01_batch,operation,19,1,5,pool (rank 5),0.5372,incorrect,,SDNN,RMSSD
+T097.3,T097,01_batch,operation,11,1,4,pool (rank 4),0.5701,incorrect,,SDNN,Coefficient of variation of NN
+T097.4,T097,01_batch,operation,7,1,3,pool (rank 3),0.6013,incorrect,,SDNN,SDNN index
+T097.5,T097,01_batch,operation,1,1,1,pool (rank 1),0.8554,correct,,SDNN,SDNN
+T098.1,T098,05_batch,rational,16,4,3,pool (rank 3),0.5292,incorrect,,delete low- and high-frequency noise components,Determine beat-level high-frequency noise
+T098.2,T098,05_batch,rational,3,4,2,pool (rank 2),0.6019,incorrect,,delete low- and high-frequency noise components,Remove muscle noise and frequency contaminants
+T098.3,T098,05_batch,rational,22,4,5,pool (rank 5),0.388,incorrect,,delete low- and high-frequency noise components,Remove power line interference and suppress DC
+T098.4,T098,05_batch,rational,8,4,1,pool (rank 1),0.6238,incorrect,,delete low- and high-frequency noise components,Remove high-frequency noise and power line interference
+T098.5,T098,05_batch,rational,30,4,4,pool (rank 4),0.4471,incorrect,,delete low- and high-frequency noise components,Decrease especial effects and arbitrary noise
+T099.1,T099,05_batch,operation,5,13,1,pool (rank 1),0.9912,correct,,moving average filter,Moving average filtering
+T099.2,T099,05_batch,operation,12,13,3,pool (rank 3),0.5236,incorrect,,moving average filter,High-pass filtering for DC offset
+T099.3,T099,05_batch,operation,29,13,2,pool (rank 2),0.6555,incorrect,,moving average filter,Local median filtering
+T099.4,T099,05_batch,operation,17,13,5,pool (rank 5),0.484,incorrect,,moving average filter,Notch filtering
+T099.5,T099,05_batch,operation,15,13,4,pool (rank 4),0.4887,incorrect,,moving average filter,High-pass filtering for noise assessment
+T100.1,T100,01_batch,rational,25,16,4,pool (rank 4),0.2991,incorrect,,Generally preferred over other NNI-based indices due to better statistical properties,Statistical robustness of RMSSD
+T100.2,T100,01_batch,rational,12,16,5,pool (rank 5),0.2705,incorrect,,Generally preferred over other NNI-based indices due to better statistical properties,Stable comparisons across HR baselines
+T100.3,T100,01_batch,rational,30,16,7,"audit (rank 7, ranks 6-10)",0.2633,incorrect,,Generally preferred over other NNI-based indices due to better statistical properties,Quantify HRV geometrically
+T100.4,T100,01_batch,rational,32,16,3,pool (rank 3),0.3128,incorrect,,Generally preferred over other NNI-based indices due to better statistical properties,Many NN intervals required
+T100.5,T100,01_batch,rational,22,16,1,pool (rank 1),0.5994,correct,,Generally preferred over other NNI-based indices due to better statistical properties,Better statistical properties of RMSSD
+T100.6,T100,01_batch,rational,10,16,2,pool (rank 2),0.487,incorrect,,Generally preferred over other NNI-based indices due to better statistical properties,Guideline recommendation for traditional indices
+T101.1,T101,03_batch,operation,13,3,3,pool (rank 3),0.5466,incorrect,,threshold-based wavelet transformation,Least-mean-square filtering
+T101.2,T101,03_batch,operation,11,3,5,pool (rank 5),0.5348,incorrect,,threshold-based wavelet transformation,Low-pass filtering
+T101.3,T101,03_batch,operation,10,3,2,pool (rank 2),0.8298,incorrect,,threshold-based wavelet transformation,Discrete wavelet transformation
+T101.4,T101,03_batch,operation,12,3,4,pool (rank 4),0.541,incorrect,,threshold-based wavelet transformation,Adaptive filtering
+T101.5,T101,03_batch,operation,19,3,1,pool (rank 1),1,correct,,threshold-based wavelet transformation,Threshold-based wavelet transformation
+T102.1,T102,05_batch,operation,15,7,2,pool (rank 2),0.5047,incorrect,,low-pass filter,High-pass filtering for noise assessment
+T102.2,T102,05_batch,operation,12,7,3,pool (rank 3),0.4199,incorrect,,low-pass filter,High-pass filtering for DC offset
+T102.3,T102,05_batch,operation,13,7,4,pool (rank 4),0.4029,incorrect,,low-pass filter,High-pass filtering for baseline drift
+T102.4,T102,05_batch,operation,7,7,1,pool (rank 1),0.9737,correct,,low-pass filter,Low-pass filtering
+T102.5,T102,05_batch,operation,17,7,5,pool (rank 5),0.3808,incorrect,,low-pass filter,Notch filtering
+T103.1,T103,04_batch,operation,7,12,2,pool (rank 2),0.5971,incorrect,,neural networks,Principal component analysis
+T103.2,T103,04_batch,operation,6,12,4,pool (rank 4),0.5236,incorrect,,neural networks,Adaptive filtering
+T103.3,T103,04_batch,operation,9,12,1,pool (rank 1),0.8333,correct,"[check] aligned to GT 12 by the algorithm; its rationale 'ECG enhancement' is not one of GT 12's two rationales ('denoise ECG', 'ECG signal denoising and preprocessing'); marked correct as instructed",neural networks,Neural network denoising
+T103.4,T103,04_batch,operation,8,12,3,pool (rank 3),0.5278,incorrect,,neural networks,Independent component analysis
+T103.5,T103,04_batch,operation,20,12,5,pool (rank 5),0.5234,incorrect,,neural networks,Linear filtering
+T104.1,T104,04_batch,rational,13,13,2,pool (rank 2),0.6148,correct,,simplify and minimize hardware requirements,Simplify and minimize hardware
+T104.2,T104,04_batch,rational,38,13,5,pool (rank 5),0.2864,incorrect,,simplify and minimize hardware requirements,Minimum-phase square-root choice
+T104.3,T104,04_batch,rational,12,13,3,pool (rank 3),0.3401,incorrect,,simplify and minimize hardware requirements,Difficult performance control
+T104.4,T104,04_batch,rational,11,13,4,pool (rank 4),0.3157,incorrect,,simplify and minimize hardware requirements,Too many processing units
+T104.5,T104,04_batch,rational,56,13,1,pool (rank 1),0.6458,incorrect,,simplify and minimize hardware requirements,Wavelet hardware efficiency
+T105.1,T105,03_batch,operation,10,4,1,pool (rank 1),1,correct,,discrete wavelet transformation,Discrete wavelet transformation
+T105.2,T105,03_batch,operation,14,4,3,pool (rank 3),0.5462,incorrect,,discrete wavelet transformation,Recursive least-squares filtering
+T105.3,T105,03_batch,operation,19,4,2,pool (rank 2),0.8298,incorrect,,discrete wavelet transformation,Threshold-based wavelet transformation
+T105.4,T105,03_batch,operation,13,4,4,pool (rank 4),0.5337,incorrect,,discrete wavelet transformation,Least-mean-square filtering
+T105.5,T105,03_batch,operation,12,4,5,pool (rank 5),0.4932,incorrect,,discrete wavelet transformation,Adaptive filtering
+T106.1,T106,01_batch,operation,11,4,9,"audit (rank 9, ranks 6-10)",0.1718,incorrect,,SDANN,Coefficient of variation of NN
+T106.2,T106,01_batch,operation,6,4,1,pool (rank 1),1,correct,,SDANN,SDANN
+T106.3,T106,01_batch,operation,7,4,2,pool (rank 2),0.6615,incorrect,,SDANN,SDNN index
+T106.4,T106,01_batch,operation,1,4,4,pool (rank 4),0.4897,incorrect,,SDANN,SDNN
+T106.5,T106,01_batch,operation,19,4,5,pool (rank 5),0.3731,incorrect,,SDANN,RMSSD
+T106.6,T106,01_batch,operation,18,4,3,pool (rank 3),0.5756,incorrect,,SDANN,SDSD
+T107.1,T107,02_batch,operation,7,12,2,pool (rank 2),0.6871,incorrect,,bandpass filter,Adaptive filtering
+T107.2,T107,02_batch,operation,4,12,3,pool (rank 3),0.508,incorrect,,bandpass filter,Direct QRS suppression
+T107.3,T107,02_batch,operation,16,12,4,pool (rank 4),0.4998,incorrect,,bandpass filter,Pan and Tompkins QRS detection
+T107.4,T107,02_batch,operation,6,12,1,pool (rank 1),0.984,correct,,bandpass filter,Bandpass filtering
+T107.5,T107,02_batch,operation,26,12,5,pool (rank 5),0.4994,incorrect,,bandpass filter,Time-frequency analysis of atrial activity
+T108.1,T108,04_batch,rational,28,5,2,pool (rank 2),0.5153,incorrect,,Noisy ECG,Improve ECG quality
+T108.2,T108,04_batch,rational,30,5,5,pool (rank 5),0.3745,incorrect,,Noisy ECG,Symlet resemblance to ECG
+T108.3,T108,04_batch,rational,3,5,4,pool (rank 4),0.415,incorrect,,Noisy ECG,Impaired ECG interpretation
+T108.4,T108,04_batch,rational,1,5,1,pool (rank 1),0.5823,incorrect,,Noisy ECG,ECG noise contamination
+T108.5,T108,04_batch,rational,5,5,3,pool (rank 3),0.4401,incorrect,,Noisy ECG,ECG enhancement
+T109.1,T109,01_batch,rational,16,2,5,pool (rank 5),0.3019,incorrect,,Capture short-term high-frequency variation and long-term low-frequency components,Reduced sensitivity to measurement errors
+T109.2,T109,01_batch,rational,21,2,3,pool (rank 3),0.3161,incorrect,,Capture short-term high-frequency variation and long-term low-frequency components,Short-term HR variations
+T109.3,T109,01_batch,rational,33,2,4,pool (rank 4),0.3154,incorrect,,Capture short-term high-frequency variation and long-term low-frequency components,Recordings shorter than recommended 20 minutes
+T109.4,T109,01_batch,rational,3,2,1,pool (rank 1),0.599,correct,,Capture short-term high-frequency variation and long-term low-frequency components,Short- and long-term HR variation
+T109.5,T109,01_batch,rational,8,2,2,pool (rank 2),0.3546,incorrect,,Capture short-term high-frequency variation and long-term low-frequency components,Estimate long-term HRV components
+T110.1,T110,01_batch,operation,19,10,3,pool (rank 3),0.5089,incorrect,,Median Absolute Deviation (MAD),RMSSD
+T110.2,T110,01_batch,operation,13,10,1,pool (rank 1),0.9518,correct,,Median Absolute Deviation (MAD),Median absolute deviation
+T110.3,T110,01_batch,operation,14,10,2,pool (rank 2),0.5367,incorrect,,Median Absolute Deviation (MAD),Interquartile range
+T110.4,T110,01_batch,operation,28,10,5,pool (rank 5),0.4996,incorrect,,Median Absolute Deviation (MAD),Triangular interpolation of NN histogram
+T110.5,T110,01_batch,operation,29,10,9,"audit (rank 9, ranks 6-10)",0.4325,incorrect,,Median Absolute Deviation (MAD),NN scatter-plot geometric indices
+T110.6,T110,01_batch,operation,27,10,4,pool (rank 4),0.5044,incorrect,,Median Absolute Deviation (MAD),HRV triangular index
+T111.1,T111,05_batch,rational,6,15,1,pool (rank 1),0.7561,correct,,to smooth the signal,Smooth ECG
+T111.2,T111,05_batch,rational,27,15,5,pool (rank 5),0.2873,incorrect,,to smooth the signal,Remove ECG isoelectric line
+T111.3,T111,05_batch,rational,25,15,4,pool (rank 4),0.3198,incorrect,,to smooth the signal,Remove P and T waves
+T111.4,T111,05_batch,rational,10,15,3,pool (rank 3),0.3255,incorrect,,to smooth the signal,Remove DC offset
+T111.5,T111,05_batch,rational,30,15,2,pool (rank 2),0.3506,incorrect,,to smooth the signal,Decrease especial effects and arbitrary noise
+T112.1,T112,04_batch,rational,31,2,2,pool (rank 2),0.3081,incorrect,,reduces the diagnostic accuracy,Better correlation and denoising
+T112.2,T112,04_batch,rational,43,2,5,pool (rank 5),0.2733,incorrect,,reduces the diagnostic accuracy,Denoising evaluation
+T112.3,T112,04_batch,rational,3,2,3,pool (rank 3),0.2981,incorrect,,reduces the diagnostic accuracy,Impaired ECG interpretation
+T112.4,T112,04_batch,rational,28,2,1,pool (rank 1),0.323,incorrect,,reduces the diagnostic accuracy,Improve ECG quality
+T112.5,T112,04_batch,rational,5,2,4,pool (rank 4),0.2958,incorrect,,reduces the diagnostic accuracy,ECG enhancement
+T112.6,T112,04_batch,rational,17,2,7,"audit (rank 7, ranks 6-10)",0.2524,incorrect,,reduces the diagnostic accuracy,Baseline wander removal
+T113.1,T113,04_batch,operation,47,32,22,"audit (rank 22, beyond rank 10)",0.0907,incorrect,,Add simulated white noise,Root mean square error
+T113.2,T113,04_batch,operation,32,32,1,pool (rank 1),0.3816,correct,,Add simulated white noise,White and colored noise simulation
+T113.3,T113,04_batch,operation,54,32,4,pool (rank 4),0.1519,incorrect,,Add simulated white noise,Baseline drift synthesis
+T113.4,T113,04_batch,operation,33,32,2,pool (rank 2),0.2054,correct,,Add simulated white noise,Noise addition to ECG
+T113.5,T113,04_batch,operation,46,32,5,pool (rank 5),0.1429,incorrect,,Add simulated white noise,Normalized mean square error
+T113.6,T113,04_batch,operation,9,32,3,pool (rank 3),0.164,incorrect,,Add simulated white noise,Neural network denoising
+T114.1,T114,01_batch,operation,29,15,4,pool (rank 4),0.4967,incorrect,,RMSSD,NN scatter-plot geometric indices
+T114.2,T114,01_batch,operation,19,15,1,pool (rank 1),0.9869,correct,,RMSSD,RMSSD
+T114.3,T114,01_batch,operation,14,15,3,pool (rank 3),0.5066,incorrect,,RMSSD,Interquartile range
+T114.4,T114,01_batch,operation,18,15,2,pool (rank 2),0.785,incorrect,,RMSSD,SDSD
+T114.5,T114,01_batch,operation,13,15,5,pool (rank 5),0.4907,incorrect,,RMSSD,Median absolute deviation
+T115.1,T115,01_batch,operation,18,20,4,pool (rank 4),0.2591,incorrect,,pNN50,SDSD
+T115.2,T115,01_batch,operation,17,20,5,pool (rank 5),0.2472,incorrect,,pNN50,Successive NN differences
+T115.3,T115,01_batch,operation,20,20,1,pool (rank 1),0.716,correct,,pNN50,pNN threshold indices
+T115.4,T115,01_batch,operation,1,20,2,pool (rank 2),0.417,incorrect,,pNN50,SDNN
+T115.5,T115,01_batch,operation,19,20,3,pool (rank 3),0.2703,incorrect,,pNN50,RMSSD
+T116.1,T116,04_batch,rational,36,20,4,pool (rank 4),0.2134,incorrect,,baseline wander construction,CWT redundancy
+T116.2,T116,04_batch,rational,17,20,1,pool (rank 1),0.6859,incorrect,,baseline wander construction,Baseline wander removal
+T116.3,T116,04_batch,rational,28,20,8,"audit (rank 8, ranks 6-10)",0.1952,incorrect,,baseline wander construction,Improve ECG quality
+T116.4,T116,04_batch,rational,2,20,5,pool (rank 5),0.2111,incorrect,,baseline wander construction,Poor transmission channel conditions
+T116.5,T116,04_batch,rational,23,20,3,pool (rank 3),0.2139,incorrect,,baseline wander construction,Threshold selection
+T116.6,T116,04_batch,rational,55,20,2,pool (rank 2),0.2706,incorrect,,baseline wander construction,Respiration-related baseline drift
+T117.1,T117,05_batch,rational,24,17,1,pool (rank 1),0.7619,correct,,remove baseline wander,Remove baseline wander
+T117.2,T117,05_batch,rational,6,17,5,pool (rank 5),0.3238,incorrect,,remove baseline wander,Smooth ECG
+T117.3,T117,05_batch,rational,14,17,2,pool (rank 2),0.7318,incorrect,,remove baseline wander,Remove baseline wander and suppress drift
+T117.4,T117,05_batch,rational,4,17,14,"audit (rank 14, beyond rank 10)",0.1752,incorrect,,remove baseline wander,Limit ADC saturation and address antialiasing
+T117.5,T117,05_batch,rational,10,17,3,pool (rank 3),0.4286,incorrect,,remove baseline wander,Remove DC offset
+T117.6,T117,05_batch,rational,27,17,4,pool (rank 4),0.3399,incorrect,,remove baseline wander,Remove ECG isoelectric line
+T118.1,T118,05_batch,rational,9,18,9,"audit (rank 9, ranks 6-10)",0.2098,incorrect,,attenuate several singular frequencies while preserving the others,Retain data for further processing
+T118.2,T118,05_batch,rational,8,18,3,pool (rank 3),0.322,incorrect,,attenuate several singular frequencies while preserving the others,Remove high-frequency noise and power line interference
+T118.3,T118,05_batch,rational,16,18,2,pool (rank 2),0.3389,incorrect,,attenuate several singular frequencies while preserving the others,Determine beat-level high-frequency noise
+T118.4,T118,05_batch,rational,30,18,5,pool (rank 5),0.2542,incorrect,,attenuate several singular frequencies while preserving the others,Decrease especial effects and arbitrary noise
+T118.5,T118,05_batch,rational,18,18,1,pool (rank 1),0.8057,correct,,attenuate several singular frequencies while preserving the others,Selective frequency attenuation
+T118.6,T118,05_batch,rational,3,18,4,pool (rank 4),0.2976,incorrect,,attenuate several singular frequencies while preserving the others,Remove muscle noise and frequency contaminants
+T119.1,T119,05_batch,rational,22,9,2,pool (rank 2),0.7144,incorrect,,delete power line interference,Remove power line interference and suppress DC
+T119.2,T119,05_batch,rational,24,9,4,pool (rank 4),0.3565,incorrect,,delete power line interference,Remove baseline wander
+T119.3,T119,05_batch,rational,8,9,1,pool (rank 1),0.7578,incorrect,,delete power line interference,Remove high-frequency noise and power line interference
+T119.4,T119,05_batch,rational,27,9,3,pool (rank 3),0.3868,incorrect,,delete power line interference,Remove ECG isoelectric line
+T119.5,T119,05_batch,rational,25,9,5,pool (rank 5),0.3556,incorrect,,delete power line interference,Remove P and T waves
+T120.1,T120,03_batch,operation,11,8,4,pool (rank 4),0.5942,incorrect,,recursive least-squares (RLS) adaptive filter,Low-pass filtering
+T120.2,T120,03_batch,operation,19,8,6,"audit (rank 6, ranks 6-10)",0.4925,incorrect,,recursive least-squares (RLS) adaptive filter,Threshold-based wavelet transformation
+T120.3,T120,03_batch,operation,13,8,3,pool (rank 3),0.6447,incorrect,,recursive least-squares (RLS) adaptive filter,Least-mean-square filtering
+T120.4,T120,03_batch,operation,14,8,1,pool (rank 1),0.7951,correct,,recursive least-squares (RLS) adaptive filter,Recursive least-squares filtering
+T120.5,T120,03_batch,operation,10,8,5,pool (rank 5),0.502,incorrect,,recursive least-squares (RLS) adaptive filter,Discrete wavelet transformation
+T120.6,T120,03_batch,operation,12,8,2,pool (rank 2),0.6697,incorrect,,recursive least-squares (RLS) adaptive filter,Adaptive filtering
+T121.1,T121,01_batch,rational,9,18,7,"audit (rank 7, ranks 6-10)",0.2665,incorrect,,short-term time windows,Estimate short-term HR components
+T121.2,T121,01_batch,rational,8,18,3,pool (rank 3),0.2962,incorrect,,short-term time windows,Estimate long-term HRV components
+T121.3,T121,01_batch,rational,3,18,4,pool (rank 4),0.2736,incorrect,,short-term time windows,Short- and long-term HR variation
+T121.4,T121,01_batch,rational,21,18,2,pool (rank 2),0.3818,incorrect,,short-term time windows,Short-term HR variations
+T121.5,T121,01_batch,rational,26,18,1,pool (rank 1),0.871,correct,,short-term time windows,Short-term time windows
+T121.6,T121,01_batch,rational,24,18,5,pool (rank 5),0.2681,incorrect,,short-term time windows,Estimate vagally mediated HR fluctuations
+T122.1,T122,05_batch,rational,24,25,1,pool (rank 1),0.7955,correct,,remove baseline wander,Remove baseline wander
+T122.2,T122,05_batch,rational,27,25,4,pool (rank 4),0.3942,incorrect,,remove baseline wander,Remove ECG isoelectric line
+T122.3,T122,05_batch,rational,6,25,5,pool (rank 5),0.3745,incorrect,,remove baseline wander,Smooth ECG
+T122.4,T122,05_batch,rational,14,25,2,pool (rank 2),0.7148,incorrect,,remove baseline wander,Remove baseline wander and suppress drift
+T122.5,T122,05_batch,rational,10,25,3,pool (rank 3),0.4493,incorrect,,remove baseline wander,Remove DC offset
+T123.1,T123,05_batch,operation,12,19,5,pool (rank 5),0.5296,incorrect,,notch filter,High-pass filtering for DC offset
+T123.2,T123,05_batch,operation,5,19,3,pool (rank 3),0.6071,incorrect,,notch filter,Moving average filtering
+T123.3,T123,05_batch,operation,29,19,2,pool (rank 2),0.6462,incorrect,,notch filter,Local median filtering
+T123.4,T123,05_batch,operation,17,19,1,pool (rank 1),0.7185,incorrect,,notch filter,Notch filtering
+T123.5,T123,05_batch,operation,21,19,4,pool (rank 4),0.5325,incorrect,,notch filter,Notch filtering for power line interference
+T124.1,T124,02_batch,operation,18,13,5,pool (rank 5),0.5286,incorrect,,adaptive filter,Neural-network QRS cancellation
+T124.2,T124,02_batch,operation,7,13,1,pool (rank 1),0.9784,correct,,adaptive filter,Adaptive filtering
+T124.3,T124,02_batch,operation,6,13,2,pool (rank 2),0.7029,incorrect,,adaptive filter,Bandpass filtering
+T124.4,T124,02_batch,operation,14,13,3,pool (rank 3),0.5449,incorrect,,adaptive filter,Wavelet-based QRS detection
+T124.5,T124,02_batch,operation,3,13,4,pool (rank 4),0.5293,incorrect,,adaptive filter,QRS cancellation
+T125.1,T125,04_batch,operation,7,10,1,pool (rank 1),1,correct,,principal component analysis,Principal component analysis
+T125.2,T125,04_batch,operation,15,10,4,pool (rank 4),0.5365,incorrect,,principal component analysis,Wavelet coefficient thresholding
+T125.3,T125,04_batch,operation,49,10,5,pool (rank 5),0.5363,incorrect,,principal component analysis,Frequency-domain analysis
+T125.4,T125,04_batch,operation,9,10,3,pool (rank 3),0.5503,incorrect,,principal component analysis,Neural network denoising
+T125.5,T125,04_batch,operation,8,10,2,pool (rank 2),0.8174,incorrect,,principal component analysis,Independent component analysis
+T126.1,T126,05_batch,rational,14,34,2,pool (rank 2),0.5756,incorrect,,Deleted Baseline Wandering,Remove baseline wander and suppress drift
+T126.2,T126,05_batch,rational,24,34,1,pool (rank 1),0.7089,correct,,Deleted Baseline Wandering,Remove baseline wander
+T126.3,T126,05_batch,rational,6,34,5,pool (rank 5),0.298,incorrect,,Deleted Baseline Wandering,Smooth ECG
+T126.4,T126,05_batch,rational,1,34,4,pool (rank 4),0.3076,incorrect,,Deleted Baseline Wandering,Remove ECG artifacts
+T126.5,T126,05_batch,rational,10,34,3,pool (rank 3),0.3088,incorrect,,Deleted Baseline Wandering,Remove DC offset
+T127.1,T127,01_batch,operation,11,6,5,pool (rank 5),0.3839,incorrect,,SDNNI (SDNN Index),Coefficient of variation of NN
+T127.2,T127,01_batch,operation,1,6,3,pool (rank 3),0.5004,incorrect,,SDNNI (SDNN Index),SDNN
+T127.3,T127,01_batch,operation,6,6,2,pool (rank 2),0.69,incorrect,,SDNNI (SDNN Index),SDANN
+T127.4,T127,01_batch,operation,7,6,1,pool (rank 1),0.9613,correct,,SDNNI (SDNN Index),SDNN index
+T127.5,T127,01_batch,operation,18,6,4,pool (rank 4),0.4915,incorrect,,SDNNI (SDNN Index),SDSD
+T128.1,T128,05_batch,operation,15,16,2,pool (rank 2),0.5504,incorrect,,high-pass filter,High-pass filtering for noise assessment
+T128.2,T128,05_batch,operation,17,16,5,pool (rank 5),0.4215,incorrect,,high-pass filter,Notch filtering
+T128.3,T128,05_batch,operation,21,16,10,"audit (rank 10, ranks 6-10)",0.2615,incorrect,,high-pass filter,Notch filtering for power line interference
+T128.4,T128,05_batch,operation,7,16,4,pool (rank 4),0.4638,incorrect,,high-pass filter,Low-pass filtering
+T128.5,T128,05_batch,operation,13,16,1,pool (rank 1),0.8379,correct,,high-pass filter,High-pass filtering for baseline drift
+T128.6,T128,05_batch,operation,12,16,3,pool (rank 3),0.4826,incorrect,,high-pass filter,High-pass filtering for DC offset
+T129.1,T129,02_batch,rational,2,17,3,pool (rank 3),0.3059,incorrect,,QRS-free ECG,Isolated atrial activity for feature extraction
+T129.2,T129,02_batch,rational,12,17,1,pool (rank 1),0.4047,incorrect,,QRS-free ECG,QRS detection for most cancellation methods
+T129.3,T129,02_batch,rational,19,17,2,pool (rank 2),0.3804,incorrect,,QRS-free ECG,Reported robustness to noise and QRS variations
+T129.4,T129,02_batch,rational,1,17,4,pool (rank 4),0.2512,incorrect,,QRS-free ECG,Atrial and ventricular activity distinction
+T129.5,T129,02_batch,rational,17,17,5,pool (rank 5),0.1483,incorrect,,QRS-free ECG,Better detection accuracy and computational cost
+T130.1,T130,05_batch,operation,19,21,1,pool (rank 1),0.7859,correct,,notch filter,High-quality software notch filtering
+T130.2,T130,05_batch,operation,15,21,5,pool (rank 5),0.3281,incorrect,,notch filter,High-pass filtering for noise assessment
+T130.3,T130,05_batch,operation,12,21,4,pool (rank 4),0.3489,incorrect,,notch filter,High-pass filtering for DC offset
+T130.4,T130,05_batch,operation,21,21,3,pool (rank 3),0.5669,correct,,notch filter,Notch filtering for power line interference
+T130.5,T130,05_batch,operation,17,21,2,pool (rank 2),0.6809,incorrect,,notch filter,Notch filtering
+T131.1,T131,03_batch,rational,1,11,3,pool (rank 3),0.2982,incorrect,,reduced QRS wave sharpness and important information,Low ECG signal-to-noise ratio
+T131.2,T131,03_batch,rational,16,11,2,pool (rank 2),0.3836,incorrect,,reduced QRS wave sharpness and important information,Possible loss of waveform shape
+T131.3,T131,03_batch,rational,2,11,5,pool (rank 5),0.2682,incorrect,,reduced QRS wave sharpness and important information,ECG noise contamination
+T131.4,T131,03_batch,rational,15,11,1,pool (rank 1),0.6815,correct,,reduced QRS wave sharpness and important information,"Reduced Q, R and S wave sharpness"
+T131.5,T131,03_batch,rational,3,11,4,pool (rank 4),0.2747,incorrect,,reduced QRS wave sharpness and important information,ECG and EMG spectral overlap
+T132.1,T132,03_batch,operation,11,12,1,pool (rank 1),0.835,correct,,bandpass filter,Low-pass filtering
+T132.2,T132,03_batch,operation,13,12,3,pool (rank 3),0.5296,incorrect,,bandpass filter,Least-mean-square filtering
+T132.3,T132,03_batch,operation,19,12,4,pool (rank 4),0.5104,incorrect,,bandpass filter,Threshold-based wavelet transformation
+T132.4,T132,03_batch,operation,12,12,2,pool (rank 2),0.6315,incorrect,,bandpass filter,Adaptive filtering
+T132.5,T132,03_batch,operation,14,12,5,pool (rank 5),0.4998,incorrect,,bandpass filter,Recursive least-squares filtering
+T133.1,T133,04_batch,operation,16,14,2,pool (rank 2),0.7498,incorrect,,wavelet-transform-based denoising,Inverse discrete wavelet reconstruction
+T133.2,T133,04_batch,operation,22,14,3,pool (rank 3),0.7121,incorrect,,wavelet-transform-based denoising,Wavelet-based Wiener filtering
+T133.3,T133,04_batch,operation,21,14,5,pool (rank 5),0.6496,incorrect,,wavelet-transform-based denoising,Wavelet packets
+T133.4,T133,04_batch,operation,14,14,1,pool (rank 1),0.8922,correct,,wavelet-transform-based denoising,Wavelet-transform denoising
+T133.5,T133,04_batch,operation,15,14,4,pool (rank 4),0.65,incorrect,,wavelet-transform-based denoising,Wavelet coefficient thresholding
+T134.1,T134,02_batch,rational,2,1,5,pool (rank 5),0.1096,incorrect,, QRS cancellation,Isolated atrial activity for feature extraction
+T134.2,T134,02_batch,rational,12,1,1,pool (rank 1),0.5367,incorrect,, QRS cancellation,QRS detection for most cancellation methods
+T134.3,T134,02_batch,rational,1,1,4,pool (rank 4),0.126,incorrect,, QRS cancellation,Atrial and ventricular activity distinction
+T134.4,T134,02_batch,rational,17,1,3,pool (rank 3),0.1718,incorrect,, QRS cancellation,Better detection accuracy and computational cost
+T134.5,T134,02_batch,rational,19,1,2,pool (rank 2),0.3658,incorrect,, QRS cancellation,Reported robustness to noise and QRS variations
+T135.1,T135,04_batch,rational,31,35,2,pool (rank 2),0.419,incorrect,,evaluate performance of denoising technique on synthetic noise,Better correlation and denoising
+T135.2,T135,04_batch,rational,34,35,3,pool (rank 3),0.3937,incorrect,,evaluate performance of denoising technique on synthetic noise,Study multiple noise sources
+T135.3,T135,04_batch,rational,43,35,1,pool (rank 1),0.5478,incorrect,,evaluate performance of denoising technique on synthetic noise,Denoising evaluation
+T135.4,T135,04_batch,rational,1,35,4,pool (rank 4),0.3075,incorrect,,evaluate performance of denoising technique on synthetic noise,ECG noise contamination
+T135.5,T135,04_batch,rational,28,35,5,pool (rank 5),0.2926,correct,,evaluate performance of denoising technique on synthetic noise,Improve ECG quality
+T136.1,T136,05_batch,rational,10,11,2,pool (rank 2),0.6673,correct,,remove the DC offset,Remove DC offset
+T136.2,T136,05_batch,rational,24,11,3,pool (rank 3),0.3771,incorrect,,remove the DC offset,Remove baseline wander
+T136.3,T136,05_batch,rational,22,11,5,pool (rank 5),0.3699,incorrect,,remove the DC offset,Remove power line interference and suppress DC
+T136.4,T136,05_batch,rational,27,11,4,pool (rank 4),0.3748,incorrect,,remove the DC offset,Remove ECG isoelectric line
+T136.5,T136,05_batch,rational,11,11,1,pool (rank 1),0.7261,incorrect,,remove the DC offset,Electrode interface DC offset

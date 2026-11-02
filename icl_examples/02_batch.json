@@ -1,0 +1,316 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "name": " QRS cancellation",
+      "node_type": "rational",
+      "text_evidence": "QRS cancellation"
+    },
+    {
+      "id": 2,
+      "name": "Pan and Tompkins algorithm",
+      "node_type": "operation",
+      "text_evidence": "Pan and Tompkins algorithm",
+      "parameters": []
+    },
+    {
+      "id": 3,
+      "name": "average beat subtraction (ABS)",
+      "node_type": "operation",
+      "text_evidence": "average beat subtraction (ABS)",
+      "parameters": []
+    },
+    {
+      "id": 4,
+      "name": " direct suppression of QRS",
+      "node_type": "operation",
+      "text_evidence": "direct suppression of QRS",
+      "parameters": []
+    },
+    {
+      "id": 5,
+      "name": "spatiotemporal QRS cancellation",
+      "node_type": "operation",
+      "text_evidence": "spatiotemporal QRS cancellation",
+      "parameters": []
+    },
+    {
+      "id": 6,
+      "name": " independent component analysis",
+      "node_type": "operation",
+      "text_evidence": "independent component analysis",
+      "parameters": []
+    },
+    {
+      "id": 7,
+      "name": "neural networks for QRS detection",
+      "node_type": "operation",
+      "text_evidence": "Different algorithms are used for the detection of QRS Complex, the popular ones include (...) neural networks",
+      "parameters": []
+    },
+    {
+      "id": 8,
+      "name": "wavelet transformation for QRS detection",
+      "node_type": "operation",
+      "text_evidence": "Different algorithms are used for the detection of QRS Complex, the popular ones include wavelet transformation",
+      "parameters": []
+    },
+    {
+      "id": 9,
+      "name": "principal component analysis",
+      "node_type": "operation",
+      "text_evidence": "principal component analysis",
+      "parameters": []
+    },
+    {
+      "id": 10,
+      "name": "detection of QRS complex",
+      "node_type": "rational",
+      "text_evidence": "detection of QRS Complex"
+    },
+    {
+      "id": 11,
+      "name": "QRS substraction from ECG",
+      "node_type": "operation",
+      "text_evidence": "QRS complex (...) is subtracted from the ECG",
+      "parameters": []
+    },
+    {
+      "id": 12,
+      "name": "bandpass filter",
+      "node_type": "operation",
+      "text_evidence": "bandpass filter",
+      "parameters": []
+    },
+    {
+      "id": 13,
+      "name": "adaptive filter",
+      "node_type": "operation",
+      "text_evidence": "adaptive filter",
+      "parameters": []
+    },
+    {
+      "id": 14,
+      "name": "blind source separation",
+      "node_type": "operation",
+      "text_evidence": "blind source separation",
+      "parameters": []
+    },
+    {
+      "id": 15,
+      "name": "capture atrial activity",
+      "node_type": "rational",
+      "text_evidence": "extract features from atrial activity"
+    },
+    {
+      "id": 16,
+      "name": "isolate f-wave",
+      "node_type": "rational",
+      "text_evidence": "isolated f-wave"
+    },
+    {
+      "id": 17,
+      "name": "QRS-free ECG",
+      "node_type": "rational",
+      "text_evidence": "ECG free from QRS complex"
+    },
+    {
+      "id": 18,
+      "name": "Detection accuracy and computational cost advantages",
+      "node_type": "rational",
+      "text_evidence": "Pan & Tompkins algorithm is the most popular algorithm used for the detection of QRS complex and it is found to outperform other methods in terms of detection accuracy and computational cost."
+    },
+    {
+      "id": 19,
+      "name": "Robustness to noise and QRS variations",
+      "node_type": "rational",
+      "text_evidence": "Neural Network based approach for QRS cancellation which they consider to be more robust to noise and QRS variations."
+    }
+  ],
+  "edges": [
+    {
+      "id": 20,
+      "source": 1,
+      "target": 4,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Popular methods of QRS cancellation include direct suppression of QRS"
+    },
+    {
+      "id": 21,
+      "source": 1,
+      "target": 3,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Popular methods of QRS cancellation include (...) average beat subtraction (ABS)"
+    },
+    {
+      "id": 22,
+      "source": 1,
+      "target": 5,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Popular methods of QRS cancellation include (...) spatiotemporal QRS cancellation"
+    },
+    {
+      "id": 23,
+      "source": 1,
+      "target": 6,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Popular methods of QRS cancellation include (...) independent component analysis"
+    },
+    {
+      "id": 24,
+      "source": 1,
+      "target": 9,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Popular methods of QRS cancellation include (...) principal component analysis"
+    },
+    {
+      "id": 25,
+      "source": 10,
+      "target": 7,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Different algorithms are used for the detection of QRS Complex, the popular ones include (...) neural networks"
+    },
+    {
+      "id": 26,
+      "source": 10,
+      "target": 8,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Different algorithms are used for the detection of QRS Complex, the popular ones include wavelet transformation"
+    },
+    {
+      "id": 27,
+      "source": 10,
+      "target": 2,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Pan & Tompkins algorithm is the most popular algorithm used for the detection of QRS complex "
+    },
+    {
+      "id": 28,
+      "source": 1,
+      "target": 10,
+      "polarity": "positive",
+      "edge_type": "causes",
+      "text_evidence": "Important step for the cancellation of QRS, in most of the cancellation methods, is the detection of QRS complex"
+    },
+    {
+      "id": 29,
+      "source": 2,
+      "target": 11,
+      "polarity": "positive",
+      "edge_type": "must be followed by",
+      "text_evidence": "Once the QRS complex is detected it is subtracted from the ECG"
+    },
+    {
+      "id": 30,
+      "source": 8,
+      "target": 11,
+      "polarity": "positive",
+      "edge_type": "must be followed by",
+      "text_evidence": "Once the QRS complex is detected it is subtracted from the ECG"
+    },
+    {
+      "id": 31,
+      "source": 7,
+      "target": 11,
+      "polarity": "positive",
+      "edge_type": "must be followed by",
+      "text_evidence": "Once the QRS complex is detected it is subtracted from the ECG"
+    },
+    {
+      "id": 32,
+      "source": 1,
+      "target": 13,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Popular methods of QRS cancellation include (...) adaptive filter"
+    },
+    {
+      "id": 33,
+      "source": 1,
+      "target": 12,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Popular methods of QRS cancellation include (...) bandpass filter"
+    },
+    {
+      "id": 34,
+      "source": 1,
+      "target": 14,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Popular methods of QRS cancellation include (...) blind source separation"
+    },
+    {
+      "id": 35,
+      "source": 15,
+      "target": 16,
+      "polarity": "positive",
+      "edge_type": "causes",
+      "text_evidence": "To get an isolated f-wave or (...) QRS cancellation is a common preliminary step"
+    },
+    {
+      "id": 36,
+      "source": 15,
+      "target": 17,
+      "polarity": "positive",
+      "edge_type": "causes",
+      "text_evidence": "To get (...) or ECG free from QRS complex, QRS cancellation is a common preliminary step"
+    },
+    {
+      "id": 37,
+      "source": 16,
+      "target": 1,
+      "polarity": "positive",
+      "edge_type": "causes",
+      "text_evidence": "To get an isolated f-wave (...), QRS cancellation is a common preliminary step"
+    },
+    {
+      "id": 38,
+      "source": 17,
+      "target": 1,
+      "polarity": "positive",
+      "edge_type": "causes",
+      "text_evidence": "To get an (...) ECG free from QRS complex, QRS cancellation is a common preliminary step"
+    },
+    {
+      "id": 39,
+      "source": 10,
+      "target": 18,
+      "polarity": "positive",
+      "edge_type": "in conjunction with",
+      "text_evidence": "Pan & Tompkins algorithm is the most popular algorithm used for the detection of QRS complex and it is found to outperform other methods in terms of detection accuracy and computational cost."
+    },
+    {
+      "id": 40,
+      "source": 18,
+      "target": 2,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Pan & Tompkins algorithm is the most popular algorithm used for the detection of QRS complex and it is found to outperform other methods in terms of detection accuracy and computational cost."
+    },
+    {
+      "id": 41,
+      "source": 10,
+      "target": 19,
+      "polarity": "positive",
+      "edge_type": "in conjunction with",
+      "text_evidence": "Neural Network based approach for QRS cancellation which they consider to be more robust to noise and QRS variations."
+    },
+    {
+      "id": 42,
+      "source": 19,
+      "target": 7,
+      "polarity": "positive",
+      "edge_type": "can apply",
+      "text_evidence": "Neural Network based approach for QRS cancellation which they consider to be more robust to noise and QRS variations."
+    }
+  ]
+}
